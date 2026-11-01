@@ -24,7 +24,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
 <div class="bar">
   <strong>Max's 18th &#183; prototype</strong>
   <label for="jump">Jump to
-    <select id="jump"><optgroup label="Start"><option value="intro">How to use this demo</option><option value="invite">Invite text</option><option value="home">Home</option><option value="countdown">Too early: countdown</option><option value="welcome">Welcome + group</option><option value="notcoming">Can't make it</option><option value="checkin">Check-in</option><option value="vote">Who's captain?</option><option value="captain">Captain chosen</option><option value="captainpicked">Captain picked by the clouds</option></optgroup><optgroup label="Captain (Ollie) &#183; Pub 1"><option value="mission1">Pub 1: mission</option><option value="snap1">Pub 1: snap + upload</option><option value="waiting1">Pub 1: waiting</option><option value="retake1">Pub 1: sent back</option><option value="thumbsup1">Pub 1: thumbs up</option></optgroup><optgroup label="Captain (Ollie) &#183; Pub 2"><option value="mission2">Pub 2: mission</option><option value="snap2">Pub 2: snap + upload</option><option value="waiting2">Pub 2: waiting</option><option value="retake2">Pub 2: sent back</option><option value="thumbsup2">Pub 2: thumbs up</option></optgroup><optgroup label="Captain (Ollie) &#183; Pub 3"><option value="mission3">Pub 3: mission</option><option value="snap3">Pub 3: snap + upload</option><option value="waiting3">Pub 3: waiting</option><option value="retake3">Pub 3: sent back</option><option value="thumbsup3">Pub 3: thumbs up</option></optgroup><optgroup label="Captain (Ollie) &#183; Golden Pub"><option value="golden">Golden Pub: find Max</option><option value="snapmax">Golden Pub: snap with Max</option><option value="waitingmax">Golden Pub: waiting</option><option value="yourein">Ollie's Golden Ticket</option></optgroup><optgroup label="Crew member (Sam)"><option value="crew">Crew tracker (live)</option><option value="takeover">Take over as captain</option><option value="samticket">Sam's Golden Ticket</option></optgroup><optgroup label="Behind the bar"><option value="becksemail">Becks: photo email</option><option value="becksreview">Becks: review + reel</option><option value="organiser">Organiser: groups</option></optgroup></select>
+    <select id="jump"><optgroup label="Start"><option value="intro">How to use this demo</option><option value="home">Home</option><option value="join">Join with a code</option><option value="countdown">Too early: countdown</option><option value="welcome">Welcome + group</option><option value="notcoming">Can't make it</option><option value="checkin">Check-in</option><option value="vote">Who's captain?</option><option value="captain">Captain chosen</option><option value="captainpicked">Captain picked by the clouds</option></optgroup><optgroup label="Captain (Ollie) &#183; Pub 1"><option value="mission1">Pub 1: mission</option><option value="snap1">Pub 1: snap + upload</option><option value="waiting1">Pub 1: waiting</option><option value="retake1">Pub 1: sent back</option><option value="thumbsup1">Pub 1: thumbs up</option></optgroup><optgroup label="Captain (Ollie) &#183; Pub 2"><option value="mission2">Pub 2: mission</option><option value="snap2">Pub 2: snap + upload</option><option value="waiting2">Pub 2: waiting</option><option value="retake2">Pub 2: sent back</option><option value="thumbsup2">Pub 2: thumbs up</option></optgroup><optgroup label="Captain (Ollie) &#183; Pub 3"><option value="mission3">Pub 3: mission</option><option value="snap3">Pub 3: snap + upload</option><option value="waiting3">Pub 3: waiting</option><option value="retake3">Pub 3: sent back</option><option value="thumbsup3">Pub 3: thumbs up</option></optgroup><optgroup label="Captain (Ollie) &#183; Golden Pub"><option value="golden">Golden Pub: find Max</option><option value="snapmax">Golden Pub: snap with Max</option><option value="waitingmax">Golden Pub: waiting</option><option value="yourein">Ollie's Golden Ticket</option></optgroup><optgroup label="Crew member (Sam)"><option value="crew">Crew tracker (live)</option><option value="takeover">Take over as captain</option><option value="samticket">Sam's Golden Ticket</option></optgroup><optgroup label="Crawl HQ (admin)"><option value="adminsetup">Setup</option><option value="adminpubs">Pubs</option><option value="adminpeople">Who's joined</option><option value="admingroups">Groups & codes</option><option value="admininvites">Share the link</option><option value="adminlive">Live control room</option><option value="adminreview">Review (Human in the Clouds)</option><option value="adminphotos">Photos + reel</option><option value="becksemail">Becks: photo email</option></optgroup></select>
   </label>
 </div>
 <div class="stage" id="stage">
@@ -44,36 +44,9 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
       <li>Use <strong style="color: #FFC83D">Jump to</strong> at the top to see any screen, including the captain, crew and admin views.</li>
     </ol>
   </div>
-  <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #B9B4E6; text-align: center">It starts with the text message each mate gets.</p>
+  <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #B9B4E6; text-align: center">It starts the way every mate will: open the link, then enter a group code.</p>
   <div style="flex: 1"></div>
-  <a href="#invite" style="display: flex; align-items: center; justify-content: center; height: 58px; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none">Start the demo</a>
-</div>
-</section>
-<section class="screen" id="invite" aria-label="Invite text" hidden>
-<div style="width: 390px; height: 844px; box-sizing: border-box; background: #FFFFFF; color: #1A1A2E; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column">
-  <div style="display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 24px 20px 14px; border-bottom: 1px solid #E4E2EE; background: #F7F6FB">
-    <div style="width: 52px; height: 52px; border-radius: 50%; background: #14123A; color: #FFC83D; display: flex; align-items: center; justify-content: center">
-      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"></path></svg>
-    </div>
-    <h1 style="margin: 0; font-size: 15px; font-weight: 700">Max's 18th</h1>
-    <span style="font-size: 12px; color: #55536B">Text message</span>
-  </div>
-  <div style="flex: 1; display: flex; flex-direction: column; gap: 10px; padding: 18px 16px 24px">
-    <span style="align-self: center; font-size: 12px; color: #55536B">Thursday 5 Nov, 6:30pm</span>
-    <p style="margin: 0; align-self: flex-start; max-width: 290px; background: #E9E8F0; border-radius: 20px 20px 20px 6px; padding: 12px 14px; font-size: 16px; line-height: 1.45">Hey Ollie! You're on Max's 18th pub crawl, Sat 7 Nov from approx 3pm. You're in Group 7 with Sam, Finn and Jack.</p>
-    <a href="#home" style="align-self: flex-start; width: 290px; border-radius: 20px 20px 20px 6px; overflow: hidden; background: #E9E8F0; color: #1A1A2E; text-decoration: none; display: flex; flex-direction: column">
-      <span style="height: 120px; background: #14123A; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px">
-        <svg width="36" height="36" viewBox="0 0 24 24" fill="#FFC83D" stroke="#0A0920" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"></path></svg>
-        <span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 24px; color: #FFC83D">Max's 18th</span>
-      </span>
-      <span style="padding: 10px 14px; display: flex; flex-direction: column; gap: 2px">
-        <span style="font-size: 15px; font-weight: 700">Your pub crawl starts here</span>
-        <span style="font-size: 13px; color: #55536B">[app link]</span>
-      </span>
-    </a>
-    <p style="margin: 0; align-self: flex-start; max-width: 290px; background: #E9E8F0; border-radius: 20px 20px 20px 6px; padding: 12px 14px; font-size: 16px; line-height: 1.45">This link is just for you, so don't forward it. Tap it any time on the night to jump straight back in.</p>
-    <p style="margin: 0; align-self: flex-start; max-width: 290px; background: #E9E8F0; border-radius: 20px 20px 20px 6px; padding: 12px 14px; font-size: 16px; line-height: 1.45">Can't make it? Open it and tap "I can't make it" so your crew isn't left waiting.</p>
-  </div>
+  <a href="#home" style="display: flex; align-items: center; justify-content: center; height: 58px; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none">Start the demo</a>
 </div>
 </section>
 <section class="screen" id="home" aria-label="Home" hidden>
@@ -84,8 +57,36 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   </div>
   <div style="display: flex; flex-direction: column; gap: 16px; padding: 0 24px 28px; margin-top: -28px; position: relative">
     <h1 style="margin: 0; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-weight: 400; font-size: 36px; line-height: 1.05; color: #FFC83D; text-align: center; text-shadow: 0 3px 0 #0A0920">3 pubs. 1 golden ticket.</h1>
-    <a id="lets-go" href="#countdown" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 58px; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none">Let's go</a>
+    <a href="#join" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 58px; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none">Let's go</a>
   </div>
+</div>
+</section>
+<section class="screen" id="join" aria-label="Join with a code" hidden>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #14123A; color: #FFFFFF; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 18px; padding: 28px 22px 32px">
+  <div style="display: flex; align-items: center; gap: 8px; color: #FFC83D">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"></path></svg>
+    <span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 18px">Max's 18th</span>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <h1 style="margin: 0; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-weight: 400; font-size: 46px; line-height: 1; color: #FFC83D">Join your crew</h1>
+    <p style="margin: 0; font-size: 16px; line-height: 1.45; color: #D6D2F5">Enter your group's code (it looks like <strong style="color: #FFC83D">MA18-07</strong>) and your full name.</p>
+  </div>
+  <form onsubmit="return false" style="display: flex; flex-direction: column; gap: 14px">
+    <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700; color: #D6D2F5">Group code
+      <input type="text" value="MA18-07" placeholder="MA18-00" autocapitalize="characters" autocomplete="off" spellcheck="false" style="height: 60px; box-sizing: border-box; padding: 0 16px; border: 3px solid #FFC83D; border-radius: 16px; background: #221E55; color: #FFC83D; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 30px; letter-spacing: 4px; text-transform: uppercase">
+    </label>
+    <div role="status" style="display: flex; gap: 12px; align-items: center; background: #2BB673; color: #0A0920; border: 3px solid #0A0920; border-radius: 16px; padding: 12px 14px">
+      <span style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; background: #FFFFFF; border: 2px solid #0A0920; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0A0920" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span>
+      <span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px">That's Group 7</strong><span style="font-size: 14px">Sam, Finn and Jack have joined</span></span>
+    </div>
+    <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700; color: #D6D2F5">Your full name
+      <input type="text" value="Ollie Jones" autocomplete="name" style="height: 56px; box-sizing: border-box; padding: 0 16px; border: 3px solid #3A3480; border-radius: 16px; background: #221E55; color: #FFFFFF; font-family: inherit; font-size: 18px; font-weight: 700">
+    </label>
+  </form>
+  <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #B9B4E6">Don't know your code? Ask Max or check the group chat.</p>
+  <div style="flex: 1"></div>
+  <a id="lets-go" href="#countdown" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 58px; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none">Join Group 7</a>
+  <p style="margin: 0; text-align: center; font-size: 13px; color: #B9B4E6">Wrong group? You can change your code later.</p>
 </div>
 </section>
 <section class="screen" id="countdown" aria-label="Too early: countdown" hidden>
@@ -108,7 +109,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   </div>
   <div style="align-self: stretch; display: flex; gap: 12px; align-items: flex-start; background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 14px 16px; text-align: left">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4FB3FF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0; margin-top: 1px"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg>
-    <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #D6D2F5">You're in <strong style="color: #FFFFFF">Group 7</strong> with Sam, Finn and Jack. Tap your link again at 3pm on the day to check in and get your first pub.</p>
+    <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #D6D2F5">You're in <strong style="color: #FFFFFF">Group 7</strong> with Sam, Finn and Jack. Open the link again at 3pm on the day to check in and get your first pub.</p>
   </div>
   <p style="margin: 0; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 22px; color: #4FB3FF">See you there!</p>
   <div style="flex: 1"></div>
@@ -148,6 +149,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
         <span style="font-size: 14px; font-weight: 700">Jack</span>
       </div>
     </div>
+    <div style="display: flex; align-items: center; justify-content: space-between; border-top: 2px solid #3A3480; padding-top: 10px; font-size: 13px; color: #B9B4E6"><span>Code <strong style="color: #FFC83D; letter-spacing: 1px">MA18-07</strong></span><a href="#join" style="font-weight: 800">Wrong group? Change code</a></div>
   </div>
   <div style="background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 20px; box-shadow: 0 5px 0 #0A0920; padding: 18px; display: flex; flex-direction: column; gap: 8px">
     <span style="font-size: 14px; font-weight: 700">Your pub crawl fun starts at</span>
@@ -432,15 +434,12 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
 </g>
 </svg>
   </div>
-  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
-    <button type="button" style="height: 46px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 12px; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Retake</button>
-    <button type="button" style="height: 46px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 12px; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Choose from library</button>
-  </div>
   <div style="background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 16px; display: flex; flex-direction: column; gap: 8px">
     <span style="font-size: 12px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFC83D">Quick look: is it all in?</span>
     <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 10px; font-size: 14px"><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Whole crew</li><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Every face</li><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Empty glasses up</li><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Pub sign</li></ul>
   </div>
   <div style="flex: 1"></div>
+  <button type="button" style="height: 46px; display: flex; align-items: center; justify-content: center; gap: 8px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 12px; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>Not happy? Retake</button>
   <a href="#waiting1" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 58px; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none">Send it up to the clouds</a>
 </div>
 </section>
@@ -662,15 +661,12 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
 </g>
 </svg>
   </div>
-  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
-    <button type="button" style="height: 46px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 12px; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Retake</button>
-    <button type="button" style="height: 46px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 12px; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Choose from library</button>
-  </div>
   <div style="background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 16px; display: flex; flex-direction: column; gap: 8px">
     <span style="font-size: 12px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFC83D">Quick look: is it all in?</span>
     <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 10px; font-size: 14px"><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Whole crew</li><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Every face</li><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Empty glasses up</li><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Pub sign</li></ul>
   </div>
   <div style="flex: 1"></div>
+  <button type="button" style="height: 46px; display: flex; align-items: center; justify-content: center; gap: 8px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 12px; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>Not happy? Retake</button>
   <a href="#waiting2" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 58px; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none">Send it up to the clouds</a>
 </div>
 </section>
@@ -892,15 +888,12 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
 </g>
 </svg>
   </div>
-  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
-    <button type="button" style="height: 46px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 12px; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Retake</button>
-    <button type="button" style="height: 46px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 12px; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Choose from library</button>
-  </div>
   <div style="background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 16px; display: flex; flex-direction: column; gap: 8px">
     <span style="font-size: 12px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFC83D">Quick look: is it all in?</span>
     <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 10px; font-size: 14px"><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Whole crew</li><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Every face</li><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Empty glasses up</li><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Pub sign</li></ul>
   </div>
   <div style="flex: 1"></div>
+  <button type="button" style="height: 46px; display: flex; align-items: center; justify-content: center; gap: 8px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 12px; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>Not happy? Retake</button>
   <a href="#waiting3" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 58px; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none">Send it up to the clouds</a>
 </div>
 </section>
@@ -1109,15 +1102,12 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
 </g>
 </svg>
   </div>
-  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
-    <button type="button" style="height: 46px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 12px; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Retake</button>
-    <button type="button" style="height: 46px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 12px; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer">Choose from library</button>
-  </div>
   <div style="background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 16px; display: flex; flex-direction: column; gap: 8px">
     <span style="font-size: 12px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFC83D">Quick look: is it all in?</span>
     <ul style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px 10px; font-size: 14px"><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Whole crew</li><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Every face</li><li style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Max in the shot</li></ul>
   </div>
   <div style="flex: 1"></div>
+  <button type="button" style="height: 46px; display: flex; align-items: center; justify-content: center; gap: 8px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 12px; font-family: inherit; font-weight: 700; font-size: 15px; cursor: pointer"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3v11H4z"></path><circle cx="12" cy="13" r="3.5"></circle></svg>Not happy? Retake</button>
   <a href="#waitingmax" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 58px; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none">Send it up to the clouds</a>
 </div>
 </section>
@@ -1197,7 +1187,6 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
       </span>
       <span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 58px; line-height: 1.05">Ollie</span>
       <span style="font-size: 17px; font-weight: 800">Ollie Jones</span>
-      <span style="font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums">0400 000 000</span>
       <span style="font-size: 13px; font-weight: 700; margin-top: 2px">Group 7 &#183; Max's 18th</span>
     </div>
     <div style="position: relative; height: 0; border-top: 3px dashed #0A0920; margin: 0 22px" aria-hidden="true">
@@ -1214,7 +1203,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
     <svg width="44" height="44" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0"><circle cx="12" cy="12" r="11" fill="#14123A"></circle><circle cx="12" cy="7" r="1.6" fill="#FFFFFF"></circle><path d="M12 11v7" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"></path></svg>
     <span style="display: flex; flex-direction: column; gap: 2px">
       <span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 22px; line-height: 1.1">Show this to Timmy</span>
-      <span style="font-size: 14px; line-height: 1.35; font-weight: 600">Max's dad has your band. He'll check your name and mobile against the guest list.</span>
+      <span style="font-size: 14px; line-height: 1.35; font-weight: 600">Max's dad has your band. He'll check the name on your ticket.</span>
     </span>
   </div>
   <div style="align-self: stretch; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; text-align: left">
@@ -1320,7 +1309,6 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
       </span>
       <span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 58px; line-height: 1.05">Sam</span>
       <span style="font-size: 17px; font-weight: 800">Sam Smith</span>
-      <span style="font-size: 15px; font-weight: 700; font-variant-numeric: tabular-nums">0413 381 316</span>
       <span style="font-size: 13px; font-weight: 700; margin-top: 2px">Group 7 &#183; Max's 18th</span>
     </div>
     <div style="position: relative; height: 0; border-top: 3px dashed #0A0920; margin: 0 22px" aria-hidden="true">
@@ -1337,7 +1325,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
     <svg width="44" height="44" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0"><circle cx="12" cy="12" r="11" fill="#14123A"></circle><circle cx="12" cy="7" r="1.6" fill="#FFFFFF"></circle><path d="M12 11v7" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round"></path></svg>
     <span style="display: flex; flex-direction: column; gap: 2px">
       <span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 22px; line-height: 1.1">Show this to Timmy</span>
-      <span style="font-size: 14px; line-height: 1.35; font-weight: 600">Max's dad has your band. He'll check your name and mobile against the guest list.</span>
+      <span style="font-size: 14px; line-height: 1.35; font-weight: 600">Max's dad has your band. He'll check the name on your ticket.</span>
     </span>
   </div>
   <div style="align-self: stretch; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; text-align: left">
@@ -1352,6 +1340,337 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   </div>
   <div style="flex: 1"></div>
   <button class="band-btn" type="button" style="align-self: stretch; height: 50px; background: none; border: 2px dashed #3A3480; border-radius: 14px; color: #D6D2F5; font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer">Timmy: tap once the band is on</button>
+</div>
+</section>
+<section class="screen" id="adminsetup" aria-label="Setup" hidden>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #14123A; color: #FFFFFF; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 16px; padding: 24px 20px 0">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <span style="display: flex; align-items: center; gap: 6px; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 16px; color: #FFC83D"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"></path></svg>Crawl HQ</span>
+    <span style="background: #3A3480; color: #D6D2F5; border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase">Admin</span>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 4px">
+    <h1 style="margin: 0; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-weight: 400; font-size: 36px; line-height: 1; color: #FFC83D">Get ready</h1>
+    <span style="font-size: 14px; color: #D6D2F5">Max's 18th &#183; Sat 7 Nov &#183; kicks off 3pm</span>
+  </div>
+  <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+    <li><a href="#adminpubs" style="display: flex; align-items: center; gap: 12px; background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 14px; color: #FFFFFF; text-decoration: none"><span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; background: #2BB673; color: #0A0920; border: 2px solid #0A0920; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 17px; font-weight: 800">Pubs</span><span style="font-size: 13px; color: #B9B4E6">3 pubs + the Golden Pub</span></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B9B4E6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M9 6l6 6-6 6"></path></svg></a></li>
+    <li><a href="#admingroups" style="display: flex; align-items: center; gap: 12px; background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 14px; color: #FFFFFF; text-decoration: none"><span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; background: #2BB673; color: #0A0920; border: 2px solid #0A0920; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 17px; font-weight: 800">Groups &amp; codes</span><span style="font-size: 13px; color: #B9B4E6">20 groups &#183; codes and pub orders set</span></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B9B4E6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M9 6l6 6-6 6"></path></svg></a></li>
+    <li><a href="#admininvites" style="display: flex; align-items: center; gap: 12px; background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 14px; color: #FFFFFF; text-decoration: none"><span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; background: #2BB673; color: #0A0920; border: 2px solid #0A0920; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 17px; font-weight: 800">Share the link</span><span style="font-size: 13px; color: #B9B4E6">One link for everyone, plus their code</span></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B9B4E6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M9 6l6 6-6 6"></path></svg></a></li>
+    <li><a href="#adminpeople" style="display: flex; align-items: center; gap: 12px; background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 14px; color: #FFFFFF; text-decoration: none"><span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; background: #4FB3FF; color: #0A0920; border: 2px solid #0A0920; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 15px">61</span><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 17px; font-weight: 800">Who's joined</span><span style="font-size: 13px; color: #B9B4E6">61 so far &#183; move anyone in the wrong group</span></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B9B4E6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M9 6l6 6-6 6"></path></svg></a></li>
+  </ol>
+  <div style="display: flex; flex-direction: column; gap: 8px; background: #221E55; border: 3px dashed #3A3480; border-radius: 18px; padding: 14px 16px">
+    <span style="font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #4FB3FF">On the day</span>
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #D6D2F5"><strong style="color: #FFFFFF">Live</strong> shows where every group is up to. <strong style="color: #FFFFFF">Review</strong> is where the Human in the Clouds gives each photo a thumbs up or sends it back.</p>
+    <a href="#adminlive" style="align-self: flex-start; font-size: 14px; font-weight: 800">Open Live</a>
+  </div>
+  <div style="flex: 1"></div>
+  <nav aria-label="Crawl HQ sections" style="margin: 0 -20px; flex-shrink: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid #3A3480; background: #0F0D2E; padding: 8px 6px 14px">
+    <a href="#adminsetup" aria-current="page" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #FFC83D; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"></path></svg>Setup</a>
+    <a href="#adminlive" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg>Live</a>
+    <a href="#adminreview" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .5-8 6 6 0 0 0-11.5 1.5A3.3 3.3 0 0 0 7 18z"></path></svg>Review<span style="position: absolute; top: 0; right: 18%; min-width: 18px; height: 18px; border-radius: 9px; background: #FF8A3D; color: #0A0920; font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center">3</span></a>
+    <a href="#adminphotos" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-8 8"></path></svg>Photos</a>
+    </nav>
+</div>
+</section>
+<section class="screen" id="adminpubs" aria-label="Pubs" hidden>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #14123A; color: #FFFFFF; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 14px; padding: 24px 20px 0">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <span style="display: flex; align-items: center; gap: 6px; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 16px; color: #FFC83D"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"></path></svg>Crawl HQ</span>
+    <span style="background: #3A3480; color: #D6D2F5; border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase">Admin</span>
+  </div>
+  <a href="#adminsetup" style="align-self: flex-start; font-size: 14px; font-weight: 700; text-decoration: none">&#8592; Setup</a>
+  <h1 style="margin: 0; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-weight: 400; font-size: 36px; line-height: 1; color: #FFC83D">Pubs</h1>
+  <ol style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px">
+    <li style="display: flex; align-items: center; gap: 12px; background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 14px"><span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; background: #FFC83D; color: #0A0920; border: 2px solid #0A0920; display: flex; align-items: center; justify-content: center; font-weight: 800">1</span><span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 800">[PUB 1 NAME]</span><span style="font-size: 13px; color: #B9B4E6">[Street address, town]</span></span><button type="button" style="background: none; border: 0; padding: 6px; color: #FFC83D; font-family: inherit; font-size: 14px; font-weight: 800; cursor: pointer">Edit</button></li>
+    <li style="display: flex; align-items: center; gap: 12px; background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 14px"><span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; background: #FFC83D; color: #0A0920; border: 2px solid #0A0920; display: flex; align-items: center; justify-content: center; font-weight: 800">2</span><span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 800">[PUB 2 NAME]</span><span style="font-size: 13px; color: #B9B4E6">[Street address, town]</span></span><button type="button" style="background: none; border: 0; padding: 6px; color: #FFC83D; font-family: inherit; font-size: 14px; font-weight: 800; cursor: pointer">Edit</button></li>
+    <li style="display: flex; align-items: center; gap: 12px; background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 14px"><span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; background: #FFC83D; color: #0A0920; border: 2px solid #0A0920; display: flex; align-items: center; justify-content: center; font-weight: 800">3</span><span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 800">[PUB 3 NAME]</span><span style="font-size: 13px; color: #B9B4E6">[Street address, town]</span></span><button type="button" style="background: none; border: 0; padding: 6px; color: #FFC83D; font-family: inherit; font-size: 14px; font-weight: 800; cursor: pointer">Edit</button></li>
+    <li style="display: flex; align-items: center; gap: 12px; background: #221E55; border: 3px solid #FFC83D; border-radius: 18px; padding: 12px 14px"><span style="width: 36px; height: 36px; flex-shrink: 0; border-radius: 50%; background: #14123A; color: #FFC83D; border: 2px dashed #FFC83D; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"></path></svg></span><span style="flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 12px; color: #FFC83D; font-weight: 700">Golden Pub &#183; from approx 6pm</span><span style="font-size: 16px; font-weight: 800">Harbour View Hotel</span><span style="font-size: 13px; color: #B9B4E6">[Street address, town]</span></span><button type="button" style="background: none; border: 0; padding: 6px; color: #FFC83D; font-family: inherit; font-size: 14px; font-weight: 800; cursor: pointer">Edit</button></li>
+  </ol>
+  <button type="button" style="height: 50px; background: none; border: 2px dashed #3A3480; border-radius: 16px; color: #D6D2F5; font-family: inherit; font-size: 15px; font-weight: 800; cursor: pointer">+ Add a pub</button>
+  <div style="display: flex; gap: 12px; align-items: flex-start; background: #221E55; border: 3px solid #4FB3FF; border-radius: 18px; padding: 14px 16px">
+    <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0"><circle cx="12" cy="12" r="11" fill="#4FB3FF"></circle><circle cx="12" cy="7" r="1.5" fill="#14123A"></circle><path d="M12 11v7" stroke="#14123A" stroke-width="2.4" stroke-linecap="round"></path></svg>
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #D6D2F5"><strong style="color: #FFFFFF">Spread the crowd.</strong> Each group gets its own pub order on the Groups screen, so 18 groups don't all land at Pub 1 at once.</p>
+  </div>
+  <div style="flex: 1"></div>
+  <nav aria-label="Crawl HQ sections" style="margin: 0 -20px; flex-shrink: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid #3A3480; background: #0F0D2E; padding: 8px 6px 14px">
+    <a href="#adminsetup" aria-current="page" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #FFC83D; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"></path></svg>Setup</a>
+    <a href="#adminlive" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg>Live</a>
+    <a href="#adminreview" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .5-8 6 6 0 0 0-11.5 1.5A3.3 3.3 0 0 0 7 18z"></path></svg>Review<span style="position: absolute; top: 0; right: 18%; min-width: 18px; height: 18px; border-radius: 9px; background: #FF8A3D; color: #0A0920; font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center">3</span></a>
+    <a href="#adminphotos" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-8 8"></path></svg>Photos</a>
+    </nav>
+</div>
+</section>
+<section class="screen" id="adminpeople" aria-label="Who's joined" hidden>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #14123A; color: #FFFFFF; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 14px; padding: 24px 20px 0">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <span style="display: flex; align-items: center; gap: 6px; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 16px; color: #FFC83D"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"></path></svg>Crawl HQ</span>
+    <span style="background: #3A3480; color: #D6D2F5; border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase">Admin</span>
+  </div>
+  <a href="#adminsetup" style="align-self: flex-start; font-size: 14px; font-weight: 700; text-decoration: none">&#8592; Setup</a>
+  <div style="display: flex; align-items: baseline; justify-content: space-between">
+    <h1 style="margin: 0; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-weight: 400; font-size: 36px; line-height: 1; color: #FFC83D">Who's joined</h1>
+    <span style="font-size: 14px; font-weight: 700; color: #D6D2F5">61 so far</span>
+  </div>
+  <label style="display: flex; align-items: center; gap: 8px; height: 44px; flex-shrink: 0; padding: 0 12px; border: 2px solid #3A3480; border-radius: 12px; color: #B9B4E6">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-4-4"></path></svg>
+    <input type="search" placeholder="Search by name" aria-label="Search people" style="flex: 1; min-width: 0; border: 0; background: none; color: #FFFFFF; font-family: inherit; font-size: 15px">
+  </label>
+  <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column">
+      <li style="display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #2A2560"><span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700">Noah Clarke</span><span style="font-size: 13px; color: #B9B4E6">Group 9 &#183; MA18-09 &#183; joined 2 mins ago</span></span><button type="button" style="height: 32px; padding: 0 12px; border-radius: 999px; background: none; border: 2px solid #3A3480; color: #FFFFFF; font-family: inherit; font-size: 13px; font-weight: 800; cursor: pointer">Move</button></li>
+      <li style="display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #2A2560"><span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700">Ollie Jones</span><span style="font-size: 13px; color: #B9B4E6">Group 7 &#183; MA18-07 &#183; joined Thu</span></span><button type="button" style="height: 32px; padding: 0 12px; border-radius: 999px; background: none; border: 2px solid #3A3480; color: #FFFFFF; font-family: inherit; font-size: 13px; font-weight: 800; cursor: pointer">Move</button></li>
+      <li style="display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #2A2560"><span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700">Sam Smith</span><span style="font-size: 13px; color: #B9B4E6">Group 7 &#183; MA18-07 &#183; joined Thu</span></span><button type="button" style="height: 32px; padding: 0 12px; border-radius: 999px; background: none; border: 2px solid #3A3480; color: #FFFFFF; font-family: inherit; font-size: 13px; font-weight: 800; cursor: pointer">Move</button></li>
+      <li style="display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #2A2560"><span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700">Finn Taylor</span><span style="font-size: 13px; color: #B9B4E6">Group 7 &#183; MA18-07 &#183; joined Fri</span></span><button type="button" style="height: 32px; padding: 0 12px; border-radius: 999px; background: none; border: 2px solid #3A3480; color: #FFFFFF; font-family: inherit; font-size: 13px; font-weight: 800; cursor: pointer">Move</button></li>
+      <li style="display: flex; align-items: center; gap: 10px; padding: 10px 0; border-bottom: 1px solid #2A2560"><span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700">Jack Wilson</span><span style="font-size: 13px; color: #B9B4E6">Group 7 &#183; MA18-07 &#183; joined Fri</span></span><button type="button" style="height: 32px; padding: 0 12px; border-radius: 999px; background: none; border: 2px solid #3A3480; color: #FFFFFF; font-family: inherit; font-size: 13px; font-weight: 800; cursor: pointer">Move</button></li>
+      <li style="display: flex; align-items: center; gap: 10px; padding: 10px 0"><span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700">Ben Harris</span><span style="font-size: 13px; color: #B9B4E6">Group 8 &#183; MA18-08 &#183; joined Fri</span></span><button type="button" style="height: 32px; padding: 0 12px; border-radius: 999px; background: none; border: 2px solid #3A3480; color: #FFFFFF; font-family: inherit; font-size: 13px; font-weight: 800; cursor: pointer">Move</button></li>
+  </ul>
+  <div style="display: flex; gap: 12px; align-items: flex-start; background: #221E55; border: 3px solid #4FB3FF; border-radius: 18px; padding: 12px 14px">
+    <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" style="flex-shrink: 0"><circle cx="12" cy="12" r="11" fill="#4FB3FF"></circle><circle cx="12" cy="7" r="1.5" fill="#14123A"></circle><path d="M12 11v7" stroke="#14123A" stroke-width="2.4" stroke-linecap="round"></path></svg>
+    <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #D6D2F5">Someone in the wrong group? Tap <strong style="color: #FFFFFF">Move</strong>. Their app switches crew straight away.</p>
+  </div>
+  <div style="flex: 1"></div>
+  <nav aria-label="Crawl HQ sections" style="margin: 0 -20px; flex-shrink: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid #3A3480; background: #0F0D2E; padding: 8px 6px 14px">
+    <a href="#adminsetup" aria-current="page" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #FFC83D; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"></path></svg>Setup</a>
+    <a href="#adminlive" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg>Live</a>
+    <a href="#adminreview" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .5-8 6 6 0 0 0-11.5 1.5A3.3 3.3 0 0 0 7 18z"></path></svg>Review<span style="position: absolute; top: 0; right: 18%; min-width: 18px; height: 18px; border-radius: 9px; background: #FF8A3D; color: #0A0920; font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center">3</span></a>
+    <a href="#adminphotos" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-8 8"></path></svg>Photos</a>
+    </nav>
+</div>
+</section>
+<section class="screen" id="admingroups" aria-label="Groups & codes" hidden>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #14123A; color: #FFFFFF; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 14px; padding: 24px 20px 0">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <span style="display: flex; align-items: center; gap: 6px; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 16px; color: #FFC83D"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"></path></svg>Crawl HQ</span>
+    <span style="background: #3A3480; color: #D6D2F5; border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase">Admin</span>
+  </div>
+  <a href="#adminsetup" style="align-self: flex-start; font-size: 14px; font-weight: 700; text-decoration: none">&#8592; Setup</a>
+  <div style="display: flex; align-items: baseline; justify-content: space-between">
+    <h1 style="margin: 0; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-weight: 400; font-size: 36px; line-height: 1; color: #FFC83D">Groups &amp; codes</h1>
+    <span style="font-size: 14px; font-weight: 700; color: #D6D2F5">20 groups</span>
+  </div>
+  <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #D6D2F5">Each group has its own code. Mates join by entering it with their name, so you don't need to sort anyone.</p>
+  <div style="display: flex; flex-direction: column; gap: 8px; background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 14px">
+    <div style="display: flex; align-items: center; justify-content: space-between"><span style="font-size: 16px; font-weight: 800">Group 7</span><span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 18px; letter-spacing: 2px; color: #FFC83D; background: #14123A; border: 2px dashed #FFC83D; border-radius: 10px; padding: 3px 10px">MA18-07</span></div>
+    <div style="display: flex; flex-wrap: wrap; gap: 6px"><span style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: #14123A; border: 2px solid #3A3480; font-size: 14px; font-weight: 700">Ollie</span><span style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: #14123A; border: 2px solid #3A3480; font-size: 14px; font-weight: 700">Sam</span><span style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: #14123A; border: 2px solid #3A3480; font-size: 14px; font-weight: 700">Finn</span><span style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: #14123A; border: 2px solid #3A3480; font-size: 14px; font-weight: 700">Jack</span></div>
+    <div style="display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #B9B4E6"><span><strong style="color: #2BB673">4 joined</strong> &#183; Pub order: 1 &#8594; 2 &#8594; 3</span><button type="button" style="background: none; border: 0; padding: 4px 0; color: #FFC83D; font-family: inherit; font-size: 13px; font-weight: 800; cursor: pointer">Change</button></div>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 8px; background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 14px">
+    <div style="display: flex; align-items: center; justify-content: space-between"><span style="font-size: 16px; font-weight: 800">Group 8</span><span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 18px; letter-spacing: 2px; color: #FFC83D; background: #14123A; border: 2px dashed #FFC83D; border-radius: 10px; padding: 3px 10px">MA18-08</span></div>
+    <div style="display: flex; flex-wrap: wrap; gap: 6px"><span style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: #14123A; border: 2px solid #3A3480; font-size: 14px; font-weight: 700">Ben</span><span style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: #14123A; border: 2px solid #3A3480; font-size: 14px; font-weight: 700">Alfie</span><span style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: #14123A; border: 2px solid #3A3480; font-size: 14px; font-weight: 700">Josh</span></div>
+    <div style="display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #B9B4E6"><span><strong style="color: #2BB673">3 joined</strong> &#183; Pub order: 2 &#8594; 3 &#8594; 1</span><button type="button" style="background: none; border: 0; padding: 4px 0; color: #FFC83D; font-family: inherit; font-size: 13px; font-weight: 800; cursor: pointer">Change</button></div>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 8px; background: #221E55; border: 3px solid #FF8A3D; border-radius: 18px; padding: 12px 14px">
+    <div style="display: flex; align-items: center; justify-content: space-between"><span style="font-size: 16px; font-weight: 800">Group 9</span><span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 18px; letter-spacing: 2px; color: #FFC83D; background: #14123A; border: 2px dashed #FFC83D; border-radius: 10px; padding: 3px 10px">MA18-09</span></div>
+    <div style="display: flex; flex-wrap: wrap; gap: 6px"><span style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: #14123A; border: 2px solid #3A3480; font-size: 14px; font-weight: 700">Noah</span></div>
+    <div style="display: flex; align-items: center; justify-content: space-between; font-size: 13px; color: #B9B4E6"><span><strong style="color: #FF8A3D">Only 1 so far</strong> &#183; Pub order: 3 &#8594; 1 &#8594; 2</span><button type="button" style="background: none; border: 0; padding: 4px 0; color: #FFC83D; font-family: inherit; font-size: 13px; font-weight: 800; cursor: pointer">Change</button></div>
+  </div>
+  <button type="button" style="height: 46px; flex-shrink: 0; background: none; border: 2px dashed #3A3480; border-radius: 16px; color: #D6D2F5; font-family: inherit; font-size: 15px; font-weight: 800; cursor: pointer">+ Add a group</button>
+  <div style="flex: 1"></div>
+  <nav aria-label="Crawl HQ sections" style="margin: 0 -20px; flex-shrink: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid #3A3480; background: #0F0D2E; padding: 8px 6px 14px">
+    <a href="#adminsetup" aria-current="page" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #FFC83D; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"></path></svg>Setup</a>
+    <a href="#adminlive" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg>Live</a>
+    <a href="#adminreview" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .5-8 6 6 0 0 0-11.5 1.5A3.3 3.3 0 0 0 7 18z"></path></svg>Review<span style="position: absolute; top: 0; right: 18%; min-width: 18px; height: 18px; border-radius: 9px; background: #FF8A3D; color: #0A0920; font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center">3</span></a>
+    <a href="#adminphotos" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-8 8"></path></svg>Photos</a>
+    </nav>
+</div>
+</section>
+<section class="screen" id="admininvites" aria-label="Share the link" hidden>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #14123A; color: #FFFFFF; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 14px; padding: 24px 20px 0">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <span style="display: flex; align-items: center; gap: 6px; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 16px; color: #FFC83D"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"></path></svg>Crawl HQ</span>
+    <span style="background: #3A3480; color: #D6D2F5; border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase">Admin</span>
+  </div>
+  <a href="#adminsetup" style="align-self: flex-start; font-size: 14px; font-weight: 700; text-decoration: none">&#8592; Setup</a>
+  <h1 style="margin: 0; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-weight: 400; font-size: 36px; line-height: 1; color: #FFC83D">Share the link</h1>
+  <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #D6D2F5">Everyone uses the same link. Their group code decides which crew they're in.</p>
+  <div style="display: flex; flex-direction: column; gap: 10px; background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 14px 16px">
+    <span style="font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFC83D">The link</span>
+    <span style="font-size: 18px; font-weight: 800; word-break: break-all">[app link]</span>
+    <button type="button" style="align-self: flex-start; height: 40px; padding: 0 16px; border-radius: 999px; background: #4FB3FF; color: #14123A; border: 2px solid #0A0920; font-family: inherit; font-size: 14px; font-weight: 800; cursor: pointer">Copy link</button>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 10px; background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 14px 16px">
+    <span style="font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFC83D">Message for the group chat</span>
+    <p style="margin: 0; align-self: flex-start; background: #E9E8F0; color: #1A1A2E; border-radius: 18px 18px 18px 6px; padding: 10px 14px; font-size: 14px; line-height: 1.45">Max's 18th pub crawl, Sat 7 Nov from 3pm! Open [app link] and enter your group's code. Don't know it? Ask Max.</p>
+    <button type="button" style="align-self: flex-start; height: 40px; padding: 0 16px; border-radius: 999px; background: #4FB3FF; color: #14123A; border: 2px solid #0A0920; font-family: inherit; font-size: 14px; font-weight: 800; cursor: pointer">Copy message</button>
+  </div>
+  <div style="flex: 1"></div>
+  <nav aria-label="Crawl HQ sections" style="margin: 0 -20px; flex-shrink: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid #3A3480; background: #0F0D2E; padding: 8px 6px 14px">
+    <a href="#adminsetup" aria-current="page" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #FFC83D; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"></path></svg>Setup</a>
+    <a href="#adminlive" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg>Live</a>
+    <a href="#adminreview" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .5-8 6 6 0 0 0-11.5 1.5A3.3 3.3 0 0 0 7 18z"></path></svg>Review<span style="position: absolute; top: 0; right: 18%; min-width: 18px; height: 18px; border-radius: 9px; background: #FF8A3D; color: #0A0920; font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center">3</span></a>
+    <a href="#adminphotos" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-8 8"></path></svg>Photos</a>
+    </nav>
+</div>
+</section>
+<section class="screen" id="adminlive" aria-label="Live control room" hidden>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #14123A; color: #FFFFFF; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 14px; padding: 24px 20px 0">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <span style="display: flex; align-items: center; gap: 6px; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 16px; color: #FFC83D"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"></path></svg>Crawl HQ</span>
+    <span style="background: #3A3480; color: #D6D2F5; border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase">Admin</span>
+  </div>
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <h1 style="margin: 0; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-weight: 400; font-size: 36px; line-height: 1; color: #FFC83D">Live</h1>
+    <span style="display: inline-flex; align-items: center; gap: 8px; border: 2px solid #2BB673; border-radius: 999px; padding: 4px 12px; font-size: 13px; font-weight: 800"><span style="width: 8px; height: 8px; border-radius: 50%; background: #2BB673"></span>5:10pm</span>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+    <div style="background: #221E55; border: 3px solid #0A0920; border-radius: 16px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 28px; line-height: 1">58<span style="font-size: 16px; color: #B9B4E6"> / 62</span></span><span style="font-size: 12px; color: #B9B4E6">Checked in (61 joined)</span></div>
+    <a href="#adminreview" style="background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 4px 0 #0A0920; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px; text-decoration: none"><span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 28px; line-height: 1">3</span><span style="font-size: 12px; font-weight: 800">Photos to review</span></a>
+    <div style="background: #221E55; border: 3px solid #0A0920; border-radius: 16px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 28px; line-height: 1">2<span style="font-size: 16px; color: #B9B4E6"> / 18</span></span><span style="font-size: 12px; color: #B9B4E6">Groups at the Golden Pub</span></div>
+    <div style="background: #221E55; border: 3px solid #0A0920; border-radius: 16px; padding: 10px 12px; display: flex; flex-direction: column; gap: 2px"><span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 28px; line-height: 1">6<span style="font-size: 16px; color: #B9B4E6"> / 58</span></span><span style="font-size: 12px; color: #B9B4E6">Bands collected</span></div>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <span style="font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #B9B4E6">Where the 18 groups are</span>
+    <div style="display: flex; height: 18px; border-radius: 9px; overflow: hidden; border: 2px solid #0A0920" role="img" aria-label="3 groups at Pub 1, 7 at Pub 2, 6 at Pub 3, 2 at the Golden Pub">
+      <span style="flex: 3; background: #4FB3FF"></span><span style="flex: 7; background: #B9AEFF; border-left: 2px solid #0A0920"></span><span style="flex: 6; background: #FF8A3D; border-left: 2px solid #0A0920"></span><span style="flex: 2; background: #FFC83D; border-left: 2px solid #0A0920"></span>
+    </div>
+    <div style="display: flex; justify-content: space-between; font-size: 12px; color: #D6D2F5">
+      <span style="display: flex; align-items: center; gap: 4px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #4FB3FF"></span>Pub 1 &#183; 3</span>
+      <span style="display: flex; align-items: center; gap: 4px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #B9AEFF"></span>Pub 2 &#183; 7</span>
+      <span style="display: flex; align-items: center; gap: 4px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #FF8A3D"></span>Pub 3 &#183; 6</span>
+      <span style="display: flex; align-items: center; gap: 4px"><span style="width: 10px; height: 10px; border-radius: 3px; background: #FFC83D"></span>Golden &#183; 2</span>
+    </div>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <span style="font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #B9B4E6">Needs a look</span>
+    <a href="#admingroups" style="display: flex; align-items: center; gap: 12px; background: #221E55; border: 3px solid #FF8A3D; border-radius: 16px; padding: 10px 12px; color: #FFFFFF; text-decoration: none"><span style="width: 10px; height: 10px; flex-shrink: 0; border-radius: 50%; background: #FF8A3D"></span><span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 800">Group 15 is down to 2</span><span style="font-size: 13px; color: #B9B4E6">Tom can't make it. Move someone in?</span></span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B9B4E6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink: 0"><path d="M9 6l6 6-6 6"></path></svg></a>
+    <div style="display: flex; align-items: center; gap: 12px; background: #221E55; border: 3px solid #FF8A3D; border-radius: 16px; padding: 10px 12px"><span style="width: 10px; height: 10px; flex-shrink: 0; border-radius: 50%; background: #FF8A3D"></span><span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 800">Group 12 &#183; no photo in 50 mins</span><span style="font-size: 13px; color: #B9B4E6">At Pub 2 &#183; captain is Leo</span></span></div>
+    <div style="display: flex; align-items: center; gap: 12px; background: #221E55; border: 3px solid #0A0920; border-radius: 16px; padding: 10px 12px"><span style="width: 10px; height: 10px; flex-shrink: 0; border-radius: 50%; background: #4FB3FF"></span><span style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 800">Group 4 swapped captain</span><span style="font-size: 13px; color: #B9B4E6">Sam took over from Ollie at 4:32pm</span></span></div>
+  </div>
+  <div style="flex: 1"></div>
+  <nav aria-label="Crawl HQ sections" style="margin: 0 -20px; flex-shrink: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid #3A3480; background: #0F0D2E; padding: 8px 6px 14px">
+    <a href="#adminsetup" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"></path></svg>Setup</a>
+    <a href="#adminlive" aria-current="page" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #FFC83D; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg>Live</a>
+    <a href="#adminreview" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .5-8 6 6 0 0 0-11.5 1.5A3.3 3.3 0 0 0 7 18z"></path></svg>Review<span style="position: absolute; top: 0; right: 18%; min-width: 18px; height: 18px; border-radius: 9px; background: #FF8A3D; color: #0A0920; font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center">3</span></a>
+    <a href="#adminphotos" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-8 8"></path></svg>Photos</a>
+    </nav>
+</div>
+</section>
+<section class="screen" id="adminreview" aria-label="Review (Human in the Clouds)" hidden>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #14123A; color: #FFFFFF; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 12px; padding: 24px 20px 0">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <span style="display: flex; align-items: center; gap: 6px; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 16px; color: #FFC83D"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"></path></svg>Crawl HQ</span>
+    <span style="background: #3A3480; color: #D6D2F5; border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase">Admin</span>
+  </div>
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <h1 style="margin: 0; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-weight: 400; font-size: 36px; line-height: 1; color: #FFC83D">Review</h1>
+    <span style="background: #FF8A3D; color: #0A0920; border: 2px solid #0A0920; border-radius: 999px; padding: 4px 12px; font-size: 13px; font-weight: 800">3 waiting</span>
+  </div>
+  <div style="position: relative; height: 200px; flex-shrink: 0; border: 3px solid #0A0920; border-radius: 18px; overflow: hidden">
+    <svg viewBox="0 0 320 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Group photo: four mates holding up empty glasses" style="display: block; width: 100%; height: 100%">
+<rect width="320" height="220" fill="#2A2466"></rect>
+<rect y="150" width="320" height="70" fill="#221E55"></rect>
+<path d="M0 18q80 22 160 8t160 6" fill="none" stroke="#0A0920" stroke-opacity=".5" stroke-width="2"></path>
+<g fill="#FFC83D"><circle cx="20" cy="22" r="4.5"></circle><circle cx="70" cy="28" r="4.5"></circle><circle cx="120" cy="28" r="4.5"></circle><circle cx="170" cy="24" r="4.5"></circle><circle cx="220" cy="24" r="4.5"></circle><circle cx="270" cy="28" r="4.5"></circle><circle cx="305" cy="28" r="4.5"></circle></g>
+<g stroke="#0A0920" stroke-width="2.5"><path d="M138 0v34M182 0v34" fill="none"></path><rect x="130" y="32" width="60" height="26" rx="4" fill="#14123A" stroke="#FFC83D"></rect></g><text x="160" y="50" text-anchor="middle" font-family="Luckiest Guy, Rubik, sans-serif" font-size="12" fill="#FFC83D">THE PUB</text>
+<g transform="translate(48 0)" stroke="#0A0920" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<path d="M-24 162L-34 128" fill="none" stroke-width="16"></path>
+<path d="M-24 162L-34 128" fill="none" stroke="#FFC83D" stroke-width="10"></path>
+<path d="M-34 220v-44a34 34 0 0 1 68 0v44z" fill="#FFC83D"></path>
+<circle cx="0" cy="124" r="23" fill="#FFC83D"></circle>
+<path d="M-45 92h22l-3 32h-16z" fill="#FFFFFF"></path>
+
+</g>
+<g transform="translate(122 0)" stroke="#0A0920" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<path d="M-24 162L-34 128" fill="none" stroke-width="16"></path>
+<path d="M-24 162L-34 128" fill="none" stroke="#4FB3FF" stroke-width="10"></path>
+<path d="M-34 220v-44a34 34 0 0 1 68 0v44z" fill="#4FB3FF"></path>
+<circle cx="0" cy="124" r="23" fill="#4FB3FF"></circle>
+<path d="M-45 92h22l-3 32h-16z" fill="#FFFFFF"></path>
+
+</g>
+<g transform="translate(198 0) scale(-1 1)" stroke="#0A0920" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<path d="M-24 162L-34 128" fill="none" stroke-width="16"></path>
+<path d="M-24 162L-34 128" fill="none" stroke="#FF5A8A" stroke-width="10"></path>
+<path d="M-34 220v-44a34 34 0 0 1 68 0v44z" fill="#FF5A8A"></path>
+<circle cx="0" cy="124" r="23" fill="#FF5A8A"></circle>
+<path d="M-45 92h22l-3 32h-16z" fill="#FFFFFF"></path>
+
+</g>
+<g transform="translate(272 0) scale(-1 1)" stroke="#0A0920" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+<path d="M-24 162L-34 128" fill="none" stroke-width="16"></path>
+<path d="M-24 162L-34 128" fill="none" stroke="#2BB673" stroke-width="10"></path>
+<path d="M-34 220v-44a34 34 0 0 1 68 0v44z" fill="#2BB673"></path>
+<circle cx="0" cy="124" r="23" fill="#2BB673"></circle>
+<path d="M-45 92h22l-3 32h-16z" fill="#FFFFFF"></path>
+
+</g>
+</svg>
+    <button id="star" type="button" aria-label="Add this photo to the reel" aria-pressed="true" style="position: absolute; top: 10px; right: 10px; width: 48px; height: 48px; border-radius: 50%; border: 3px solid #0A0920; display: flex; align-items: center; justify-content: center; cursor: pointer; background: #FFFFFF">
+      <svg id="starIcon" width="24" height="24" viewBox="0 0 24 24" fill="#FFC83D" stroke="#0A0920" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.4l-5.6 2.9 1.1-6.2L3 9.7l6.2-.9z"></path></svg>
+    </button>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 2px">
+    <span style="font-size: 18px; font-weight: 800">Group 7 &#183; Pub 2</span>
+    <span style="font-size: 13px; color: #B9B4E6">[PUB 2 NAME] &#183; sent 4:51pm &#183; Ollie, Sam, Finn, Jack</span>
+  </div>
+  <div style="background: #221E55; border: 3px solid #0A0920; border-radius: 16px; padding: 10px 14px; display: flex; flex-direction: column; gap: 6px">
+    <span style="font-size: 12px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFC83D">Does it have</span>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 10px; font-size: 14px">
+      <span style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>All 4 of them</span>
+      <span style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Every face</span>
+      <span style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>Empty glasses</span>
+      <span style="display: flex; align-items: center; gap: 6px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2BB673" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>The pub sign</span>
+    </div>
+  </div>
+  <fieldset style="margin: 0; border: 0; padding: 0; display: flex; flex-direction: column; gap: 6px">
+    <legend style="padding: 0; margin-bottom: 6px; font-size: 12px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #B9B4E6">Sending back? Say why</legend>
+    <div style="display: flex; flex-wrap: wrap; gap: 6px">
+      <button type="button" aria-pressed="false" style="height: 34px; padding: 0 12px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 999px; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer">Someone's missing</button>
+      <button type="button" aria-pressed="false" style="height: 34px; padding: 0 12px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 999px; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer">Can't see a face</button>
+      <button type="button" aria-pressed="false" style="height: 34px; padding: 0 12px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 999px; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer">Glasses not empty</button>
+      <button type="button" aria-pressed="false" style="height: 34px; padding: 0 12px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 999px; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer">No pub sign</button>
+    </div>
+  </fieldset>
+  <div style="flex: 1"></div>
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; flex-shrink: 0">
+    <button type="button" style="height: 58px; background: #FF8A3D; color: #0A0920; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-family: inherit; font-weight: 800; font-size: 16px; text-transform: uppercase; cursor: pointer">Send back</button>
+    <button type="button" style="height: 58px; background: #2BB673; color: #0A0920; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-family: inherit; font-weight: 800; font-size: 16px; text-transform: uppercase; cursor: pointer">Thumbs up</button>
+  </div>
+  <p style="margin: 0; text-align: center; font-size: 13px; color: #B9B4E6">Tap the star to save it for the reel &#183; <span id="starCount">24</span> picked so far</p>
+  <div class="demo-zone" style="align-self: stretch; margin-top: 6px; margin-bottom: 8px; border-top: 2px dashed #3A3480; padding-top: 12px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center"><span style="font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #B9B4E6">Prototype demo</span><span style="font-size: 12px; color: #B9B4E6">What happens on the crew's phones?</span><div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px"><a href="#thumbsup2" style="display: inline-flex; align-items: center; justify-content: center; height: 40px; padding: 0 16px; border-radius: 999px; border: 2px solid #0A0920; font-family: inherit; font-size: 14px; font-weight: 800; text-decoration: none; color: #0A0920; background: #2BB673; cursor: pointer">Crew sees: thumbs up</a><a href="#retake2" style="display: inline-flex; align-items: center; justify-content: center; height: 40px; padding: 0 16px; border-radius: 999px; border: 2px solid #0A0920; font-family: inherit; font-size: 14px; font-weight: 800; text-decoration: none; color: #0A0920; background: #FF8A3D; cursor: pointer">Crew sees: sent back</a></div></div><nav aria-label="Crawl HQ sections" style="margin: 0 -20px; flex-shrink: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid #3A3480; background: #0F0D2E; padding: 8px 6px 14px">
+    <a href="#adminsetup" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"></path></svg>Setup</a>
+    <a href="#adminlive" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg>Live</a>
+    <a href="#adminreview" aria-current="page" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #FFC83D; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .5-8 6 6 0 0 0-11.5 1.5A3.3 3.3 0 0 0 7 18z"></path></svg>Review<span style="position: absolute; top: 0; right: 18%; min-width: 18px; height: 18px; border-radius: 9px; background: #FF8A3D; color: #0A0920; font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center">3</span></a>
+    <a href="#adminphotos" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-8 8"></path></svg>Photos</a>
+    </nav>
+</div>
+</section>
+<section class="screen" id="adminphotos" aria-label="Photos + reel" hidden>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #14123A; color: #FFFFFF; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 12px; padding: 24px 20px 0">
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <span style="display: flex; align-items: center; gap: 6px; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 16px; color: #FFC83D"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"></path></svg>Crawl HQ</span>
+    <span style="background: #3A3480; color: #D6D2F5; border-radius: 999px; padding: 3px 10px; font-size: 11px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase">Admin</span>
+  </div>
+  <div style="display: flex; align-items: baseline; justify-content: space-between">
+    <h1 style="margin: 0; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-weight: 400; font-size: 36px; line-height: 1; color: #FFC83D">Photos</h1>
+    <span style="font-size: 14px; font-weight: 700; color: #D6D2F5">146 from the day</span>
+  </div>
+  <div style="display: flex; flex-wrap: wrap; gap: 6px" role="group" aria-label="Filter photos">
+    <button type="button" aria-pressed="true" style="height: 34px; padding: 0 12px; border-radius: 999px; background: #FFC83D; color: #14123A; border: 2px solid #0A0920; font-family: inherit; font-size: 13px; font-weight: 800; cursor: pointer">Reel picks &#183; 24</button>
+    <button type="button" aria-pressed="false" style="height: 34px; padding: 0 12px; border-radius: 999px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer">All &#183; 146</button>
+    <button type="button" aria-pressed="false" style="height: 34px; padding: 0 12px; border-radius: 999px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer">Thumbs up &#183; 98</button>
+    <button type="button" aria-pressed="false" style="height: 34px; padding: 0 12px; border-radius: 999px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; font-family: inherit; font-size: 13px; font-weight: 700; cursor: pointer">Sent back &#183; 48</button>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px">
+    <div style="position: relative; aspect-ratio: 1 / 1; border-radius: 12px; border: 2px solid #0A0920; overflow: hidden; background: #2A2466"><svg viewBox="0 0 60 60" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%"><circle cx="30" cy="10" r="2" fill="#FFC83D"></circle><circle cx="14" cy="12" r="2" fill="#FFC83D"></circle><circle cx="46" cy="12" r="2" fill="#FFC83D"></circle><g stroke="#0A0920" stroke-width="1.5"><path d="M6 60v-9a6 6 0 0 1 12 0v9z" fill="#FFC83D"></path><circle cx="12" cy="40" r="5" fill="#FFC83D"></circle><path d="M18 60v-9a6 6 0 0 1 12 0v9z" fill="#4FB3FF"></path><circle cx="24" cy="40" r="5" fill="#4FB3FF"></circle><path d="M30 60v-9a6 6 0 0 1 12 0v9z" fill="#FF5A8A"></path><circle cx="36" cy="40" r="5" fill="#FF5A8A"></circle><path d="M42 60v-9a6 6 0 0 1 12 0v9z" fill="#2BB673"></path><circle cx="48" cy="40" r="5" fill="#2BB673"></circle></g></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFC83D" stroke="#0A0920" stroke-width="2" stroke-linejoin="round" aria-hidden="true" style="position: absolute; top: 5px; right: 5px"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.4l-5.6 2.9 1.1-6.2L3 9.7l6.2-.9z"></path></svg><span style="position: absolute; left: 5px; bottom: 5px; background: rgba(10,9,32,0.8); color: #FFFFFF; border-radius: 6px; padding: 1px 6px; font-size: 11px; font-weight: 800">G7 &#183; Pub 1</span></div>
+    <div style="position: relative; aspect-ratio: 1 / 1; border-radius: 12px; border: 2px solid #0A0920; overflow: hidden; background: #1F3B5C"><svg viewBox="0 0 60 60" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%"><circle cx="30" cy="10" r="2" fill="#FFC83D"></circle><circle cx="14" cy="12" r="2" fill="#FFC83D"></circle><circle cx="46" cy="12" r="2" fill="#FFC83D"></circle><g stroke="#0A0920" stroke-width="1.5"><path d="M6 60v-9a6 6 0 0 1 12 0v9z" fill="#FFC83D"></path><circle cx="12" cy="40" r="5" fill="#FFC83D"></circle><path d="M18 60v-9a6 6 0 0 1 12 0v9z" fill="#F4F1FF"></path><circle cx="24" cy="40" r="5" fill="#F4F1FF"></circle><path d="M30 60v-9a6 6 0 0 1 12 0v9z" fill="#FF5A8A"></path><circle cx="36" cy="40" r="5" fill="#FF5A8A"></circle><path d="M42 60v-9a6 6 0 0 1 12 0v9z" fill="#2BB673"></path><circle cx="48" cy="40" r="5" fill="#2BB673"></circle><path d="M19 33l1-5 2 2 2-4 2 4 2-2 1 5z" fill="#FFC83D"></path></g></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFC83D" stroke="#0A0920" stroke-width="2" stroke-linejoin="round" aria-hidden="true" style="position: absolute; top: 5px; right: 5px"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.4l-5.6 2.9 1.1-6.2L3 9.7l6.2-.9z"></path></svg><span style="position: absolute; left: 5px; bottom: 5px; background: rgba(10,9,32,0.8); color: #FFFFFF; border-radius: 6px; padding: 1px 6px; font-size: 11px; font-weight: 800">G3 &#183; Max</span></div>
+    <div style="position: relative; aspect-ratio: 1 / 1; border-radius: 12px; border: 2px solid #0A0920; overflow: hidden; background: #5A3B2E"><svg viewBox="0 0 60 60" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%"><circle cx="30" cy="10" r="2" fill="#FFC83D"></circle><circle cx="14" cy="12" r="2" fill="#FFC83D"></circle><circle cx="46" cy="12" r="2" fill="#FFC83D"></circle><g stroke="#0A0920" stroke-width="1.5"><path d="M6 60v-9a6 6 0 0 1 12 0v9z" fill="#FFC83D"></path><circle cx="12" cy="40" r="5" fill="#FFC83D"></circle><path d="M18 60v-9a6 6 0 0 1 12 0v9z" fill="#4FB3FF"></path><circle cx="24" cy="40" r="5" fill="#4FB3FF"></circle><path d="M30 60v-9a6 6 0 0 1 12 0v9z" fill="#FF5A8A"></path><circle cx="36" cy="40" r="5" fill="#FF5A8A"></circle><path d="M42 60v-9a6 6 0 0 1 12 0v9z" fill="#2BB673"></path><circle cx="48" cy="40" r="5" fill="#2BB673"></circle></g></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFC83D" stroke="#0A0920" stroke-width="2" stroke-linejoin="round" aria-hidden="true" style="position: absolute; top: 5px; right: 5px"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.4l-5.6 2.9 1.1-6.2L3 9.7l6.2-.9z"></path></svg><span style="position: absolute; left: 5px; bottom: 5px; background: rgba(10,9,32,0.8); color: #FFFFFF; border-radius: 6px; padding: 1px 6px; font-size: 11px; font-weight: 800">G12 &#183; Pub 2</span></div>
+    <div style="position: relative; aspect-ratio: 1 / 1; border-radius: 12px; border: 2px solid #0A0920; overflow: hidden; background: #3A2A5C"><svg viewBox="0 0 60 60" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%"><circle cx="30" cy="10" r="2" fill="#FFC83D"></circle><circle cx="14" cy="12" r="2" fill="#FFC83D"></circle><circle cx="46" cy="12" r="2" fill="#FFC83D"></circle><g stroke="#0A0920" stroke-width="1.5"><path d="M6 60v-9a6 6 0 0 1 12 0v9z" fill="#FFC83D"></path><circle cx="12" cy="40" r="5" fill="#FFC83D"></circle><path d="M18 60v-9a6 6 0 0 1 12 0v9z" fill="#4FB3FF"></path><circle cx="24" cy="40" r="5" fill="#4FB3FF"></circle><path d="M30 60v-9a6 6 0 0 1 12 0v9z" fill="#FF5A8A"></path><circle cx="36" cy="40" r="5" fill="#FF5A8A"></circle><path d="M42 60v-9a6 6 0 0 1 12 0v9z" fill="#2BB673"></path><circle cx="48" cy="40" r="5" fill="#2BB673"></circle></g></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFC83D" stroke="#0A0920" stroke-width="2" stroke-linejoin="round" aria-hidden="true" style="position: absolute; top: 5px; right: 5px"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.4l-5.6 2.9 1.1-6.2L3 9.7l6.2-.9z"></path></svg><span style="position: absolute; left: 5px; bottom: 5px; background: rgba(10,9,32,0.8); color: #FFFFFF; border-radius: 6px; padding: 1px 6px; font-size: 11px; font-weight: 800">G7 &#183; Pub 2</span></div>
+    <div style="position: relative; aspect-ratio: 1 / 1; border-radius: 12px; border: 2px solid #0A0920; overflow: hidden; background: #2A2466"><svg viewBox="0 0 60 60" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%"><circle cx="30" cy="10" r="2" fill="#FFC83D"></circle><circle cx="14" cy="12" r="2" fill="#FFC83D"></circle><circle cx="46" cy="12" r="2" fill="#FFC83D"></circle><g stroke="#0A0920" stroke-width="1.5"><path d="M6 60v-9a6 6 0 0 1 12 0v9z" fill="#FFC83D"></path><circle cx="12" cy="40" r="5" fill="#FFC83D"></circle><path d="M18 60v-9a6 6 0 0 1 12 0v9z" fill="#4FB3FF"></path><circle cx="24" cy="40" r="5" fill="#4FB3FF"></circle><path d="M30 60v-9a6 6 0 0 1 12 0v9z" fill="#FF5A8A"></path><circle cx="36" cy="40" r="5" fill="#FF5A8A"></circle><path d="M42 60v-9a6 6 0 0 1 12 0v9z" fill="#2BB673"></path><circle cx="48" cy="40" r="5" fill="#2BB673"></circle></g></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFC83D" stroke="#0A0920" stroke-width="2" stroke-linejoin="round" aria-hidden="true" style="position: absolute; top: 5px; right: 5px"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.4l-5.6 2.9 1.1-6.2L3 9.7l6.2-.9z"></path></svg><span style="position: absolute; left: 5px; bottom: 5px; background: rgba(10,9,32,0.8); color: #FFFFFF; border-radius: 6px; padding: 1px 6px; font-size: 11px; font-weight: 800">G9 &#183; Pub 3</span></div>
+    <div style="position: relative; aspect-ratio: 1 / 1; border-radius: 12px; border: 2px solid #0A0920; overflow: hidden; background: #1F3B5C"><svg viewBox="0 0 60 60" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%"><circle cx="30" cy="10" r="2" fill="#FFC83D"></circle><circle cx="14" cy="12" r="2" fill="#FFC83D"></circle><circle cx="46" cy="12" r="2" fill="#FFC83D"></circle><g stroke="#0A0920" stroke-width="1.5"><path d="M6 60v-9a6 6 0 0 1 12 0v9z" fill="#FFC83D"></path><circle cx="12" cy="40" r="5" fill="#FFC83D"></circle><path d="M18 60v-9a6 6 0 0 1 12 0v9z" fill="#F4F1FF"></path><circle cx="24" cy="40" r="5" fill="#F4F1FF"></circle><path d="M30 60v-9a6 6 0 0 1 12 0v9z" fill="#FF5A8A"></path><circle cx="36" cy="40" r="5" fill="#FF5A8A"></circle><path d="M42 60v-9a6 6 0 0 1 12 0v9z" fill="#2BB673"></path><circle cx="48" cy="40" r="5" fill="#2BB673"></circle><path d="M19 33l1-5 2 2 2-4 2 4 2-2 1 5z" fill="#FFC83D"></path></g></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFC83D" stroke="#0A0920" stroke-width="2" stroke-linejoin="round" aria-hidden="true" style="position: absolute; top: 5px; right: 5px"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.4l-5.6 2.9 1.1-6.2L3 9.7l6.2-.9z"></path></svg><span style="position: absolute; left: 5px; bottom: 5px; background: rgba(10,9,32,0.8); color: #FFFFFF; border-radius: 6px; padding: 1px 6px; font-size: 11px; font-weight: 800">G1 &#183; Max</span></div>
+    <div style="position: relative; aspect-ratio: 1 / 1; border-radius: 12px; border: 2px solid #0A0920; overflow: hidden; background: #5A3B2E"><svg viewBox="0 0 60 60" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%"><circle cx="30" cy="10" r="2" fill="#FFC83D"></circle><circle cx="14" cy="12" r="2" fill="#FFC83D"></circle><circle cx="46" cy="12" r="2" fill="#FFC83D"></circle><g stroke="#0A0920" stroke-width="1.5"><path d="M6 60v-9a6 6 0 0 1 12 0v9z" fill="#FFC83D"></path><circle cx="12" cy="40" r="5" fill="#FFC83D"></circle><path d="M18 60v-9a6 6 0 0 1 12 0v9z" fill="#4FB3FF"></path><circle cx="24" cy="40" r="5" fill="#4FB3FF"></circle><path d="M30 60v-9a6 6 0 0 1 12 0v9z" fill="#FF5A8A"></path><circle cx="36" cy="40" r="5" fill="#FF5A8A"></circle><path d="M42 60v-9a6 6 0 0 1 12 0v9z" fill="#2BB673"></path><circle cx="48" cy="40" r="5" fill="#2BB673"></circle></g></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFC83D" stroke="#0A0920" stroke-width="2" stroke-linejoin="round" aria-hidden="true" style="position: absolute; top: 5px; right: 5px"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.4l-5.6 2.9 1.1-6.2L3 9.7l6.2-.9z"></path></svg><span style="position: absolute; left: 5px; bottom: 5px; background: rgba(10,9,32,0.8); color: #FFFFFF; border-radius: 6px; padding: 1px 6px; font-size: 11px; font-weight: 800">G15 &#183; Pub 1</span></div>
+    <div style="position: relative; aspect-ratio: 1 / 1; border-radius: 12px; border: 2px solid #0A0920; overflow: hidden; background: #3A2A5C"><svg viewBox="0 0 60 60" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%"><circle cx="30" cy="10" r="2" fill="#FFC83D"></circle><circle cx="14" cy="12" r="2" fill="#FFC83D"></circle><circle cx="46" cy="12" r="2" fill="#FFC83D"></circle><g stroke="#0A0920" stroke-width="1.5"><path d="M6 60v-9a6 6 0 0 1 12 0v9z" fill="#FFC83D"></path><circle cx="12" cy="40" r="5" fill="#FFC83D"></circle><path d="M18 60v-9a6 6 0 0 1 12 0v9z" fill="#4FB3FF"></path><circle cx="24" cy="40" r="5" fill="#4FB3FF"></circle><path d="M30 60v-9a6 6 0 0 1 12 0v9z" fill="#FF5A8A"></path><circle cx="36" cy="40" r="5" fill="#FF5A8A"></circle><path d="M42 60v-9a6 6 0 0 1 12 0v9z" fill="#2BB673"></path><circle cx="48" cy="40" r="5" fill="#2BB673"></circle></g></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFC83D" stroke="#0A0920" stroke-width="2" stroke-linejoin="round" aria-hidden="true" style="position: absolute; top: 5px; right: 5px"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.4l-5.6 2.9 1.1-6.2L3 9.7l6.2-.9z"></path></svg><span style="position: absolute; left: 5px; bottom: 5px; background: rgba(10,9,32,0.8); color: #FFFFFF; border-radius: 6px; padding: 1px 6px; font-size: 11px; font-weight: 800">G4 &#183; Pub 3</span></div>
+    <div style="position: relative; aspect-ratio: 1 / 1; border-radius: 12px; border: 2px solid #0A0920; overflow: hidden; background: #2A2466"><svg viewBox="0 0 60 60" aria-hidden="true" style="position: absolute; inset: 0; width: 100%; height: 100%"><circle cx="30" cy="10" r="2" fill="#FFC83D"></circle><circle cx="14" cy="12" r="2" fill="#FFC83D"></circle><circle cx="46" cy="12" r="2" fill="#FFC83D"></circle><g stroke="#0A0920" stroke-width="1.5"><path d="M6 60v-9a6 6 0 0 1 12 0v9z" fill="#FFC83D"></path><circle cx="12" cy="40" r="5" fill="#FFC83D"></circle><path d="M18 60v-9a6 6 0 0 1 12 0v9z" fill="#4FB3FF"></path><circle cx="24" cy="40" r="5" fill="#4FB3FF"></circle><path d="M30 60v-9a6 6 0 0 1 12 0v9z" fill="#FF5A8A"></path><circle cx="36" cy="40" r="5" fill="#FF5A8A"></circle><path d="M42 60v-9a6 6 0 0 1 12 0v9z" fill="#2BB673"></path><circle cx="48" cy="40" r="5" fill="#2BB673"></circle></g></svg><svg width="18" height="18" viewBox="0 0 24 24" fill="#FFC83D" stroke="#0A0920" stroke-width="2" stroke-linejoin="round" aria-hidden="true" style="position: absolute; top: 5px; right: 5px"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.4l-5.6 2.9 1.1-6.2L3 9.7l6.2-.9z"></path></svg><span style="position: absolute; left: 5px; bottom: 5px; background: rgba(10,9,32,0.8); color: #FFFFFF; border-radius: 6px; padding: 1px 6px; font-size: 11px; font-weight: 800">G8 &#183; Pub 2</span></div>
+  </div>
+  <div style="flex: 1"></div>
+  <button type="button" style="height: 56px; flex-shrink: 0; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-family: inherit; font-weight: 800; font-size: 16px; letter-spacing: 0.5px; text-transform: uppercase; cursor: pointer">Download reel picks (24)</button>
+  <button type="button" style="height: 46px; flex-shrink: 0; background: none; border: 2px solid #3A3480; border-radius: 14px; color: #FFFFFF; font-family: inherit; font-weight: 800; font-size: 15px; cursor: pointer">Download all 146</button>
+  <p style="margin: 0; text-align: center; font-size: 13px; line-height: 1.45; color: #B9B4E6">Full-size photos, named by group and pub, ready for CapCut or iMovie.</p>
+  <nav aria-label="Crawl HQ sections" style="margin: 0 -20px; flex-shrink: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 2px solid #3A3480; background: #0F0D2E; padding: 8px 6px 14px">
+    <a href="#adminsetup" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11M9 12h11M9 18h11M4 6l1 1 2-2M4 12l1 1 2-2M4 18l1 1 2-2"></path></svg>Setup</a>
+    <a href="#adminlive" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"></path></svg>Live</a>
+    <a href="#adminreview" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #B9B4E6; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .5-8 6 6 0 0 0-11.5 1.5A3.3 3.3 0 0 0 7 18z"></path></svg>Review<span style="position: absolute; top: 0; right: 18%; min-width: 18px; height: 18px; border-radius: 9px; background: #FF8A3D; color: #0A0920; font-size: 11px; font-weight: 800; display: flex; align-items: center; justify-content: center">3</span></a>
+    <a href="#adminphotos" aria-current="page" style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 4px 0; font-size: 11px; font-weight: 800; color: #FFC83D; text-decoration: none"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="M21 16l-5-5-8 8"></path></svg>Photos</a>
+    </nav>
 </div>
 </section>
 <section class="screen" id="becksemail" aria-label="Becks: photo email" hidden>
@@ -1421,134 +1740,14 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
       <span>The whole crew (3 or 4) &#183; every face visible &#183; empty glasses up &#183; pub sign in the background</span>
     </div>
     <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
-      <a href="#thumbsup1" style="display: flex; align-items: center; justify-content: center; gap: 8px; height: 54px; background: #2BB673; color: #0A0920; border: 3px solid #0A0920; border-radius: 14px; box-shadow: 0 4px 0 #0A0920; font-weight: 800; font-size: 16px; text-decoration: none">
+      <a href="#adminreview" style="display: flex; align-items: center; justify-content: center; gap: 8px; height: 54px; background: #2BB673; color: #0A0920; border: 3px solid #0A0920; border-radius: 14px; box-shadow: 0 4px 0 #0A0920; font-weight: 800; font-size: 16px; text-decoration: none">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M7 11v9H4v-9zM7 11l4-8c1.7 0 2.5 1 2.5 2.5V9h5.3c1.2 0 2 1.1 1.8 2.2l-1.4 7A2 2 0 0 1 17.2 20H7z"></path></svg>
         Approve
       </a>
-      <a href="#becksreview" style="display: flex; align-items: center; justify-content: center; gap: 8px; height: 54px; background: #FF8A3D; color: #0A0920; border: 3px solid #0A0920; border-radius: 14px; box-shadow: 0 4px 0 #0A0920; font-weight: 800; font-size: 16px; text-decoration: none">Send back</a>
+      <a href="#adminreview" style="display: flex; align-items: center; justify-content: center; gap: 8px; height: 54px; background: #FF8A3D; color: #0A0920; border: 3px solid #0A0920; border-radius: 14px; box-shadow: 0 4px 0 #0A0920; font-weight: 800; font-size: 16px; text-decoration: none">Send back</a>
     </div>
-    <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #55536B">Send back lets you pick what's missing. Every photo is saved for your end-of-day reel. <a href="#becksreview">Open Becks HQ</a></p>
+    <p style="margin: 0; font-size: 13px; line-height: 1.5; color: #55536B">Send back lets you pick what's missing. Every photo is saved for your end-of-day reel. <a href="#adminreview">Open the Review screen</a></p>
   </div>
-</div>
-</section>
-<section class="screen" id="becksreview" aria-label="Becks: review + reel" hidden>
-<div style="width: 390px; height: 844px; box-sizing: border-box; background: #14123A; color: #FFFFFF; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 14px; padding: 24px 20px 26px">
-  <div style="display: flex; align-items: center; justify-content: space-between">
-    <h1 style="margin: 0; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-weight: 400; font-size: 32px; color: #FFC83D">Becks HQ</h1>
-    <span style="background: #4FB3FF; color: #14123A; border: 2px solid #0A0920; border-radius: 999px; padding: 4px 12px; font-weight: 800; font-size: 13px">3 waiting</span>
-  </div>
-  <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; text-align: center">
-    <div style="background: #221E55; border-radius: 12px; padding: 8px 4px; display: flex; flex-direction: column"><span style="font-size: 20px; font-weight: 800">27</span><span style="font-size: 12px; color: #B9B4E6">Approved</span></div>
-    <div style="background: #221E55; border-radius: 12px; padding: 8px 4px; display: flex; flex-direction: column"><span style="font-size: 20px; font-weight: 800">4</span><span style="font-size: 12px; color: #B9B4E6">Sent back</span></div>
-    <div style="background: #221E55; border-radius: 12px; padding: 8px 4px; display: flex; flex-direction: column"><span style="font-size: 20px; font-weight: 800; color: #FFC83D"><span id="starCount">9</span></span><span style="font-size: 12px; color: #B9B4E6">In the reel</span></div>
-  </div>
-  <div style="position: relative; height: 220px; border: 3px solid #0A0920; border-radius: 18px; overflow: hidden">
-    <svg viewBox="0 0 320 220" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Group 7's photo: four mates holding up empty glasses" style="display: block; width: 100%; height: 100%">
-<rect width="320" height="220" fill="#2A2466"></rect>
-<rect y="150" width="320" height="70" fill="#221E55"></rect>
-<path d="M0 18q80 22 160 8t160 6" fill="none" stroke="#0A0920" stroke-opacity=".5" stroke-width="2"></path>
-<g fill="#FFC83D"><circle cx="20" cy="22" r="4.5"></circle><circle cx="70" cy="28" r="4.5"></circle><circle cx="120" cy="28" r="4.5"></circle><circle cx="170" cy="24" r="4.5"></circle><circle cx="220" cy="24" r="4.5"></circle><circle cx="270" cy="28" r="4.5"></circle><circle cx="305" cy="28" r="4.5"></circle></g>
-<g stroke="#0A0920" stroke-width="2.5"><path d="M138 0v34M182 0v34" fill="none"></path><rect x="130" y="32" width="60" height="26" rx="4" fill="#14123A" stroke="#FFC83D"></rect></g><text x="160" y="50" text-anchor="middle" font-family="Luckiest Guy, Rubik, sans-serif" font-size="12" fill="#FFC83D">THE PUB</text>
-<g transform="translate(48 0)" stroke="#0A0920" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
-<path d="M-24 162L-34 128" fill="none" stroke-width="16"></path>
-<path d="M-24 162L-34 128" fill="none" stroke="#FFC83D" stroke-width="10"></path>
-<path d="M-34 220v-44a34 34 0 0 1 68 0v44z" fill="#FFC83D"></path>
-<circle cx="0" cy="124" r="23" fill="#FFC83D"></circle>
-<path d="M-45 92h22l-3 32h-16z" fill="#FFFFFF"></path>
-
-</g>
-<g transform="translate(122 0)" stroke="#0A0920" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
-<path d="M-24 162L-34 128" fill="none" stroke-width="16"></path>
-<path d="M-24 162L-34 128" fill="none" stroke="#4FB3FF" stroke-width="10"></path>
-<path d="M-34 220v-44a34 34 0 0 1 68 0v44z" fill="#4FB3FF"></path>
-<circle cx="0" cy="124" r="23" fill="#4FB3FF"></circle>
-<path d="M-45 92h22l-3 32h-16z" fill="#FFFFFF"></path>
-
-</g>
-<g transform="translate(198 0) scale(-1 1)" stroke="#0A0920" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
-<path d="M-24 162L-34 128" fill="none" stroke-width="16"></path>
-<path d="M-24 162L-34 128" fill="none" stroke="#FF5A8A" stroke-width="10"></path>
-<path d="M-34 220v-44a34 34 0 0 1 68 0v44z" fill="#FF5A8A"></path>
-<circle cx="0" cy="124" r="23" fill="#FF5A8A"></circle>
-<path d="M-45 92h22l-3 32h-16z" fill="#FFFFFF"></path>
-
-</g>
-<g transform="translate(272 0) scale(-1 1)" stroke="#0A0920" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
-<path d="M-24 162L-34 128" fill="none" stroke-width="16"></path>
-<path d="M-24 162L-34 128" fill="none" stroke="#2BB673" stroke-width="10"></path>
-<path d="M-34 220v-44a34 34 0 0 1 68 0v44z" fill="#2BB673"></path>
-<circle cx="0" cy="124" r="23" fill="#2BB673"></circle>
-<path d="M-45 92h22l-3 32h-16z" fill="#FFFFFF"></path>
-
-</g>
-</svg>
-    <button type="button" aria-label="Star this photo for the reel" id="star" aria-pressed="true" style="position: absolute; top: 10px; right: 10px; width: 48px; height: 48px; border-radius: 50%; border: 3px solid #0A0920; display: flex; align-items: center; justify-content: center; cursor: pointer; background: #FFFFFF">
-      <svg width="24" height="24" viewBox="0 0 24 24" id="starIcon" fill="#FFC83D" stroke="#0A0920" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l2.8 5.8 6.2.9-4.5 4.4 1.1 6.2L12 17.4l-5.6 2.9 1.1-6.2L3 9.7l6.2-.9z"></path></svg>
-    </button>
-  </div>
-  <div style="display: flex; justify-content: space-between; align-items: baseline">
-    <span style="font-size: 18px; font-weight: 800">Group 7 &#183; Pub 1</span>
-    <span style="font-size: 13px; color: #B9B4E6">4 mates &#183; 3:42pm</span>
-  </div>
-  <fieldset style="margin: 0; border: 0; padding: 0; display: flex; flex-direction: column; gap: 8px">
-    <legend style="padding: 0; margin-bottom: 8px; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #B9B4E6">If sending back, what's missing?</legend>
-    <div style="display: flex; flex-wrap: wrap; gap: 8px">
-      <button type="button" aria-pressed="false" style="height: 40px; padding: 0 14px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 999px; font-family: inherit; font-size: 14px; font-weight: 700">Someone's missing</button>
-      <button type="button" aria-pressed="true" style="height: 40px; padding: 0 14px; background: #FF8A3D; color: #0A0920; border: 2px solid #0A0920; border-radius: 999px; font-family: inherit; font-size: 14px; font-weight: 700">Can't see a face</button>
-      <button type="button" aria-pressed="false" style="height: 40px; padding: 0 14px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 999px; font-family: inherit; font-size: 14px; font-weight: 700">Glasses not empty</button>
-      <button type="button" aria-pressed="false" style="height: 40px; padding: 0 14px; background: #221E55; color: #FFFFFF; border: 2px solid #3A3480; border-radius: 999px; font-family: inherit; font-size: 14px; font-weight: 700">No pub sign</button>
-    </div>
-  </fieldset>
-  <div style="flex: 1"></div>
-  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
-    <a href="#retake1" style="display: flex; align-items: center; justify-content: center; height: 58px; background: #FF8A3D; color: #0A0920; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 16px; text-transform: uppercase; text-decoration: none">Send back</a>
-    <a href="#thumbsup1" style="display: flex; align-items: center; justify-content: center; gap: 8px; height: 58px; background: #2BB673; color: #0A0920; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 16px; text-transform: uppercase; text-decoration: none">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" aria-hidden="true"><path d="M7 11v9H4v-9zM7 11l4-8c1.7 0 2.5 1 2.5 2.5V9h5.3c1.2 0 2 1.1 1.8 2.2l-1.4 7A2 2 0 0 1 17.2 20H7z"></path></svg>
-      Approve
-    </a>
-  </div>
-  <p style="margin: 0; text-align: center; font-size: 13px; color: #B9B4E6">Up next: Group 12 &#183; Pub 2, Group 3 &#183; Golden Pub</p>
-</div>
-</section>
-<section class="screen" id="organiser" aria-label="Organiser: groups" hidden>
-<div style="width: 390px; height: 844px; box-sizing: border-box; background: #14123A; color: #FFFFFF; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 14px; padding: 24px 20px 26px">
-  <div style="display: flex; align-items: center; justify-content: space-between">
-    <h1 style="margin: 0; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-weight: 400; font-size: 30px; color: #FFC83D">Crawl control</h1>
-    <span style="font-size: 13px; color: #B9B4E6">18 groups of 3&#8211;4</span>
-  </div>
-  <form onsubmit="return false" style="background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 14px; display: flex; flex-direction: column; gap: 10px">
-    <span style="font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #FFC83D">Add a mate</span>
-    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
-      <label style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #D6D2F5">Full name
-        <input type="text" placeholder="First and last" style="height: 44px; box-sizing: border-box; padding: 0 12px; border: 2px solid #3A3480; border-radius: 10px; background: #14123A; color: #FFFFFF; font-family: inherit; font-size: 15px">
-      </label>
-      <label style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #D6D2F5">Mobile
-        <input type="tel" placeholder="07..." style="height: 44px; box-sizing: border-box; padding: 0 12px; border: 2px solid #3A3480; border-radius: 10px; background: #14123A; color: #FFFFFF; font-family: inherit; font-size: 15px">
-      </label>
-    </div>
-    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; align-items: end">
-      <label style="display: flex; flex-direction: column; gap: 4px; font-size: 12px; color: #D6D2F5">Group
-        <select style="height: 44px; padding: 0 10px; border: 2px solid #3A3480; border-radius: 10px; background: #14123A; color: #FFFFFF; font-family: inherit; font-size: 15px"><option>Group 7</option><option>Group 8</option></select>
-      </label>
-      <button type="button" style="height: 44px; background: #4FB3FF; color: #14123A; border: 2px solid #0A0920; border-radius: 10px; font-family: inherit; font-weight: 800; font-size: 15px">Add</button>
-    </div>
-  </form>
-  <div style="background: #221E55; border-radius: 16px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px">
-    <div style="display: flex; justify-content: space-between; align-items: center"><span style="font-weight: 800">Group 7</span><span style="font-size: 12px; font-weight: 800; color: #2BB673">At Pub 2</span></div>
-    <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px">
-      <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="flex: 1">Ollie <span style="color: #FFC83D; font-size: 12px; font-weight: 700">captain</span></span><span style="color: #2BB673; font-size: 12px; font-weight: 800">Opened</span><button type="button" style="background: none; border: 0; padding: 4px 0; color: #B9B4E6; font-family: inherit; font-size: 13px; font-weight: 700; text-decoration: underline; cursor: pointer">Resend</button></li>
-      <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="flex: 1">Sam</span><span style="color: #2BB673; font-size: 12px; font-weight: 800">Opened</span><button type="button" style="background: none; border: 0; padding: 4px 0; color: #B9B4E6; font-family: inherit; font-size: 13px; font-weight: 700; text-decoration: underline; cursor: pointer">Resend</button></li>
-      <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="flex: 1">Finn</span><span style="color: #2BB673; font-size: 12px; font-weight: 800">Opened</span><button type="button" style="background: none; border: 0; padding: 4px 0; color: #B9B4E6; font-family: inherit; font-size: 13px; font-weight: 700; text-decoration: underline; cursor: pointer">Resend</button></li>
-      <li style="display: flex; align-items: center; gap: 10px; font-size: 14px"><span style="flex: 1">Jack</span><span style="color: #FF8A3D; font-size: 12px; font-weight: 800">Not opened</span><button type="button" style="background: #FF8A3D; border: 2px solid #0A0920; border-radius: 999px; padding: 3px 10px; color: #0A0920; font-family: inherit; font-size: 13px; font-weight: 800; cursor: pointer">Resend</button></li>
-    </ul>
-  </div>
-  <div style="background: #221E55; border-radius: 16px; padding: 12px 14px; display: flex; justify-content: space-between; align-items: center">
-    <span style="display: flex; flex-direction: column; gap: 2px"><span style="font-weight: 800">Group 8</span><span style="font-size: 13px; color: #D6D2F5">Harry &#183; Leo &#183; Tom</span></span>
-    <span style="font-size: 12px; font-weight: 800; color: #2BB673">All opened</span>
-  </div>
-  <a href="#invite" style="align-self: flex-start; font-size: 14px; font-weight: 700">Preview the invite text</a>
-  <div style="flex: 1"></div>
-  <button type="button" style="height: 58px; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-family: inherit; font-weight: 800; font-size: 17px; letter-spacing: 1px; text-transform: uppercase; cursor: pointer">Text all invite links</button>
 </div>
 </section>
   </div></div>
@@ -1610,7 +1809,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
     var on = star.getAttribute('aria-pressed') !== 'true';
     star.setAttribute('aria-pressed', on ? 'true' : 'false');
     document.getElementById('starIcon').setAttribute('fill', on ? '#FFC83D' : 'none');
-    document.getElementById('starCount').textContent = on ? '9' : '8';
+    document.getElementById('starCount').textContent = on ? '24' : '23';
   });
 
   (function () {
