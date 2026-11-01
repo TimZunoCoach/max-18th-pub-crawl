@@ -7,6 +7,7 @@
 /* One phone screen at a time, scaled to fit, with a slim jump bar above. Single dark look. */
 :root { --night: #0A0920; --ink: #FFFFFF; --muted: #B9B4E6; --gold: #FFC83D; --panel: #221E55; --line: #3A3480; color-scheme: dark; }
 html, body { height: 100%; }
+@supports (height: 100dvh) { body { height: 100dvh; } }
 body { background: var(--night); color: var(--ink); font-family: 'Rubik', system-ui, sans-serif; display: flex; flex-direction: column; overflow-x: hidden; }
 .bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px 14px; padding-block: 10px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
 .bar strong { font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-weight: 400; font-size: 18px; color: var(--gold); letter-spacing: 0.5px; }
@@ -1574,6 +1575,10 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   window.__fit = fit;
   window.addEventListener('hashchange', function () { show(location.hash.slice(1)); });
   window.addEventListener('resize', fit);
+  window.addEventListener('load', fit);
+  window.addEventListener('orientationchange', function () { setTimeout(fit, 300); });
+  if (window.visualViewport) window.visualViewport.addEventListener('resize', fit);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
   jump.addEventListener('change', function () { location.hash = jump.value; show(jump.value); });
   screens.forEach(function (sec) {
     var chks = sec.querySelectorAll('.chk');
