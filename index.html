@@ -73,21 +73,19 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   </div>
   <form onsubmit="return false" style="display: flex; flex-direction: column; gap: 14px">
     <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700; color: #D6D2F5">Group code
-      <input type="text" value="MA18-07" placeholder="MA18-00" autocapitalize="characters" autocomplete="off" spellcheck="false" style="height: 60px; box-sizing: border-box; padding: 0 16px; border: 3px solid #FFC83D; border-radius: 16px; background: #221E55; color: #FFC83D; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 30px; letter-spacing: 4px; text-transform: uppercase">
+      <input id="join-code" type="text" placeholder="Type your code" inputmode="text" maxlength="9" autocapitalize="characters" autocomplete="off" spellcheck="false" style="height: 60px; box-sizing: border-box; padding: 0 16px; border: 3px solid #FFC83D; border-radius: 16px; background: #221E55; color: #FFC83D; font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 30px; letter-spacing: 4px; text-transform: uppercase">
     </label>
-    <div role="status" style="display: flex; gap: 12px; align-items: center; background: #2BB673; color: #0A0920; border: 3px solid #0A0920; border-radius: 16px; padding: 12px 14px">
-      <span style="width: 32px; height: 32px; flex-shrink: 0; border-radius: 50%; background: #FFFFFF; border: 2px solid #0A0920; display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0A0920" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg></span>
-      <span style="display: flex; flex-direction: column; gap: 2px"><strong style="font-size: 16px">That's Group 7</strong><span style="font-size: 14px">Sam, Finn and Jack have joined</span></span>
-    </div>
+    <div id="join-status" role="status" aria-live="polite" hidden="hidden"></div>
     <label style="display: flex; flex-direction: column; gap: 6px; font-size: 14px; font-weight: 700; color: #D6D2F5">Your full name
-      <input type="text" value="Ollie Jones" autocomplete="name" style="height: 56px; box-sizing: border-box; padding: 0 16px; border: 3px solid #3A3480; border-radius: 16px; background: #221E55; color: #FFFFFF; font-family: inherit; font-size: 18px; font-weight: 700">
+      <input id="join-name" type="text" placeholder="First and last name" autocomplete="name" style="height: 56px; box-sizing: border-box; padding: 0 16px; border: 3px solid #3A3480; border-radius: 16px; background: #221E55; color: #FFFFFF; font-family: inherit; font-size: 18px; font-weight: 700">
     </label>
   </form>
   <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #B9B4E6">Don't know your code? Ask Max or check the group chat.</p>
   <div style="flex: 1"></div>
-  <a id="lets-go" href="#countdown" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 58px; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none">Join Group 7</a>
+  <button id="join-off" type="button" disabled="disabled" style="height: 58px; background: #2E2A66; color: #B9B4E6; border: 3px solid #3A3480; border-radius: 16px; font-family: inherit; font-weight: 800; font-size: 16px; letter-spacing: 1px; text-transform: uppercase">Enter your group code</button>
+  <a id="lets-go" hidden="hidden" href="#countdown" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 58px; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none">Join</a>
   <p style="margin: 0; text-align: center; font-size: 13px; color: #B9B4E6">Wrong group? You can change your code later.</p>
-</div>
+<div class="demo-zone" style="align-self: stretch; margin-top: 6px; border-top: 2px dashed #3A3480; padding-top: 12px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center"><span style="font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #B9B4E6">Prototype demo</span><span style="font-size: 12px; color: #B9B4E6">Codes run MA18-01 to MA18-20. Try MA18-07, then any first and last name.</span><div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px"></div></div></div>
 </section>
 <section class="screen" id="countdown" aria-label="Too early: countdown" hidden>
 <div style="width: 390px; height: 844px; box-sizing: border-box; background: #14123A; color: #FFFFFF; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; gap: 18px; padding: 64px 22px 32px; text-align: center">
@@ -1924,6 +1922,55 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
     render();
   })();
 
+  (function () {
+    var code = document.getElementById('join-code'), name = document.getElementById('join-name');
+    var status = document.getElementById('join-status');
+    var on = document.getElementById('lets-go'), off = document.getElementById('join-off');
+    var tick = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0A0920" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"></path></svg>';
+    var cross = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0A0920" stroke-width="3.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>';
+    function card(bg, icon, title, text) {
+      return '<div style="display:flex;gap:12px;align-items:center;background:' + bg + ';color:#0A0920;border:3px solid #0A0920;border-radius:16px;padding:12px 14px">' +
+        '<span style="width:32px;height:32px;flex-shrink:0;border-radius:50%;background:#FFFFFF;border:2px solid #0A0920;display:flex;align-items:center;justify-content:center">' + icon + '</span>' +
+        '<span style="display:flex;flex-direction:column;gap:2px"><strong style="font-size:16px">' + title + '</strong><span style="font-size:14px">' + text + '</span></span></div>';
+    }
+    function group() {
+      var raw = code.value.trim().toUpperCase().replace(/\s+/g, '');
+      var m = raw.match(/^MA18-?(\d{1,2})$/);
+      var n = m ? parseInt(m[1], 10) : 0;
+      return { raw: raw, n: (n >= 1 && n <= 20 && m[1].length === 2) ? n : 0 };
+    }
+    function check(final) {
+      var g = group();
+      var words = name.value.trim().split(/\s+/).filter(function (w) { return w.length > 0; });
+      var nameOk = words.length >= 2;
+      if (g.n) {
+        status.hidden = false;
+        status.innerHTML = card('#2BB673', tick, "That's Group " + g.n, g.n === 7 ? 'Sam, Finn and Jack have joined' : "You'll be one of the first in");
+        code.style.borderColor = '#2BB673';
+      } else if (g.raw.length >= 6 || (final && g.raw.length > 0)) {
+        status.hidden = false;
+        status.innerHTML = card('#FF8A3D', cross, "We don't know that code", 'Check it with Max or the group chat.');
+        code.style.borderColor = '#FF8A3D';
+      } else {
+        status.hidden = true;
+        code.style.borderColor = '#FFC83D';
+      }
+      var ready = g.n && nameOk;
+      on.hidden = !ready; off.hidden = !!ready;
+      on.textContent = g.n ? 'Join Group ' + g.n : 'Join';
+      off.textContent = !g.n ? 'Enter your group code' : 'Add your full name';
+      if (window.__fit) window.__fit();
+    }
+    code.addEventListener('input', function () { check(false); });
+    code.addEventListener('blur', function () {
+      var g = group();
+      if (g.n) code.value = 'MA18-' + (g.n < 10 ? '0' : '') + g.n;
+      check(true);
+    });
+    name.addEventListener('input', function () { check(false); });
+    on.addEventListener('click', function (e) { if (!group().n) e.preventDefault(); });
+    check(false);
+  })();
   (function () {
     var vt = document.getElementById('vote-timer'), left = 60;
     setInterval(function () {
