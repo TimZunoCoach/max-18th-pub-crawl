@@ -85,7 +85,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
   <button id="join-off" type="button" disabled="disabled" style="height: 58px; background: #2E2A66; color: #B9B4E6; border: 3px solid #3A3480; border-radius: 16px; font-family: inherit; font-weight: 800; font-size: 16px; letter-spacing: 1px; text-transform: uppercase">Enter your group code</button>
   <a id="lets-go" hidden="hidden" href="#countdown" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 58px; background: #FFC83D; color: #14123A; border: 3px solid #0A0920; border-radius: 16px; box-shadow: 0 5px 0 #0A0920; font-weight: 800; font-size: 18px; letter-spacing: 1px; text-transform: uppercase; text-decoration: none">Join</a>
   <p style="margin: 0; text-align: center; font-size: 13px; color: #B9B4E6">Wrong group? You can change your code later.</p>
-<div class="demo-zone" style="align-self: stretch; margin-top: 6px; border-top: 2px dashed #3A3480; padding-top: 12px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center"><span style="font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #B9B4E6">Prototype demo</span><span style="font-size: 12px; color: #B9B4E6">Codes run MA18-01 to MA18-20. Try MA18-07, then any first and last name.</span><div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px"></div></div></div>
+<div class="demo-zone" style="align-self: stretch; margin-top: 6px; border-top: 2px dashed #3A3480; padding-top: 12px; display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center"><span style="font-size: 11px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; color: #B9B4E6">Prototype demo</span><span style="font-size: 12px; color: #B9B4E6">Just looking? Use the test code <strong style="color: #FFC83D; letter-spacing: 1px">TEST</strong> and any first and last name.</span><div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px"></div></div></div>
 </section>
 <section class="screen" id="countdown" aria-label="Too early: countdown" hidden>
 <div style="width: 390px; height: 844px; box-sizing: border-box; background: #14123A; color: #FFFFFF; font-family: 'Rubik', system-ui, sans-serif; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; gap: 18px; padding: 64px 22px 32px; text-align: center">
@@ -1446,6 +1446,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
     <span style="font-size: 14px; font-weight: 700; color: #D6D2F5">20 groups</span>
   </div>
   <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #D6D2F5">Each group has its own code. Mates join by entering it with their name, so you don't need to sort anyone.</p>
+  <div style="display: flex; align-items: center; gap: 12px; background: #221E55; border: 3px dashed #4FB3FF; border-radius: 18px; padding: 12px 14px"><span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 18px; letter-spacing: 2px; color: #4FB3FF; background: #14123A; border: 2px dashed #4FB3FF; border-radius: 10px; padding: 3px 10px">TEST</span><span style="flex: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 15px; font-weight: 800">Test code</span><span style="font-size: 13px; color: #B9B4E6">For trying the app. Doesn't count on the day.</span></span><button type="button" style="background: none; border: 0; padding: 4px 0; color: #FFC83D; font-family: inherit; font-size: 13px; font-weight: 800; cursor: pointer">Turn off</button></div>
   <div style="display: flex; flex-direction: column; gap: 8px; background: #221E55; border: 3px solid #0A0920; border-radius: 18px; padding: 12px 14px">
     <div style="display: flex; align-items: center; justify-content: space-between"><span style="font-size: 16px; font-weight: 800">Group 7</span><span style="font-family: 'Luckiest Guy', 'Rubik', sans-serif; font-size: 18px; letter-spacing: 2px; color: #FFC83D; background: #14123A; border: 2px dashed #FFC83D; border-radius: 10px; padding: 3px 10px">MA18-07</span></div>
     <div style="display: flex; flex-wrap: wrap; gap: 6px"><span style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: #14123A; border: 2px solid #3A3480; font-size: 14px; font-weight: 700">Ollie</span><span style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: #14123A; border: 2px solid #3A3480; font-size: 14px; font-weight: 700">Sam</span><span style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: #14123A; border: 2px solid #3A3480; font-size: 14px; font-weight: 700">Finn</span><span style="display: inline-flex; align-items: center; height: 30px; padding: 0 12px; border-radius: 999px; background: #14123A; border: 2px solid #3A3480; font-size: 14px; font-weight: 700">Jack</span></div>
@@ -1935,6 +1936,7 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
     }
     function group() {
       var raw = code.value.trim().toUpperCase().replace(/\s+/g, '');
+      if (raw === 'TEST') return { raw: raw, n: 7, test: true };
       var m = raw.match(/^MA18-?(\d{1,2})$/);
       var n = m ? parseInt(m[1], 10) : 0;
       return { raw: raw, n: (n >= 1 && n <= 20 && m[1].length === 2) ? n : 0 };
@@ -1945,7 +1947,8 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
       var nameOk = words.length >= 2;
       if (g.n) {
         status.hidden = false;
-        status.innerHTML = card('#2BB673', tick, "That's Group " + g.n, g.n === 7 ? 'Sam, Finn and Jack have joined' : "You'll be one of the first in");
+        status.innerHTML = g.test ? card('#2BB673', tick, "That's the test group", "Try it out with Sam, Finn and Jack. It doesn't count on the day.")
+          : card('#2BB673', tick, "That's Group " + g.n, g.n === 7 ? 'Sam, Finn and Jack have joined' : "You'll be one of the first in");
         code.style.borderColor = '#2BB673';
       } else if (g.raw.length >= 6 || (final && g.raw.length > 0)) {
         status.hidden = false;
@@ -1957,14 +1960,14 @@ a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible
       }
       var ready = g.n && nameOk;
       on.hidden = !ready; off.hidden = !!ready;
-      on.textContent = g.n ? 'Join Group ' + g.n : 'Join';
+      on.textContent = g.test ? 'Join the test group' : (g.n ? 'Join Group ' + g.n : 'Join');
       off.textContent = !g.n ? 'Enter your group code' : 'Add your full name';
       if (window.__fit) window.__fit();
     }
     code.addEventListener('input', function () { check(false); });
     code.addEventListener('blur', function () {
       var g = group();
-      if (g.n) code.value = 'MA18-' + (g.n < 10 ? '0' : '') + g.n;
+      if (g.n && !g.test) code.value = 'MA18-' + (g.n < 10 ? '0' : '') + g.n;
       check(true);
     });
     name.addEventListener('input', function () { check(false); });
